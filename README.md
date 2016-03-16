@@ -22,3 +22,8 @@ Todo:
 - VM für Wordpress aufsetzen
 - Windows VM für Randsomware aus Spamordner aufsetzen
 - Latex-Vorlage für Beamer einchecken
+
+Links:
+------
+
+- http://blog.talosintel.com/2016/03/teslacrypt-301-tales-from-crypto.html
