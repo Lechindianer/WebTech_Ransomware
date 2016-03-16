@@ -26,6 +26,7 @@ Todo:
 Links:
 ------
 
+- http://www.bankinfosecurity.com/imperva-a-8860/op-1 
 - http://blog.talosintel.com/2016/03/teslacrypt-301-tales-from-crypto.html
 - http://www.macrumors.com/2016/03/06/mac-ransomware-transmission/- 
 - http://blog.malwaremustdie.org/2013/11/tango-down-of-44-cryptolocker-cnc.html
