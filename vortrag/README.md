@@ -39,8 +39,22 @@ Kryptographie (3 min):
 	- Als Schlüssel für AES verwenden
 
 
-Funktionsweise:
+Ablauf:
 -----
+- Encryptor RaaS (Ransomware as a Service)
+- Infektion 
+	- weite Streuung, meistens unspezifisch
+	- Verbreitung: E-Mail, Webseiten (WordPress), Zero-Day, Makros (Excel, Word)
+- Warten (Mehrere Stunden / Tage / Neustarts)
+- C&C-Server finden und kontaktieren
+- (Public- Private) Schlüssel erstellen
+- Private-Key an C&C-Server senden und lokal vernichten
+- Dateien verschlüsseln
+	- Sitzungsschlüssel erstellen
+	- Datei verschlüsseln
+	- Sitzungsschlüssel mit Public-Key verschlüsseln und mit der Datei speichern
+	- Sitzungsschlüssel vernichten
+- Nutzer informieren
 
 
 
