@@ -30,6 +30,7 @@ Links:
 - http://blog.talosintel.com/2016/03/teslacrypt-301-tales-from-crypto.html
 - http://www.macrumors.com/2016/03/06/mac-ransomware-transmission/- 
 - http://blog.malwaremustdie.org/2013/11/tango-down-of-44-cryptolocker-cnc.html
+- https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Cyber-Sicherheit/Themen/Ransomware.html
 - Beschreibung von F-Secure:
 - https://www.f-secure.com/weblog/archives/00002515.html
 - https://www.f-secure.com/weblog/archives/00002716.html
