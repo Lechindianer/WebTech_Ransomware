@@ -49,7 +49,8 @@ Links:
 - https://www.f-secure.com/weblog/archives/00002515.html
 - https://www.f-secure.com/weblog/archives/00002716.html
 - https://www.f-secure.com/weblog/archives/00002704.html
-- https://www.f-secure.com/weblog/archives/00002640.html
+- https://www.f-secure.com/weblog/archives/00002640.htlm
+- https://labsblog.f-secure.com/2016/03/21/the-graphic-design-of-maktub-locker-ransomware/
 - IEEE:
 - http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7387902&newsearch=true&queryText=ransomware
 - http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7336353&newsearch=true&queryText=ransomware
