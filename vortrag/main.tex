@@ -154,6 +154,33 @@
 	\end{itemize}
 \end{frame}
 
+
+\section{Kryptographie}
+\subsection{Symmetrische Verschlüsselung}
+\begin{frame}{Symmetrische Verschlüsselung}
+	\begin{itemize}
+		\item Gleicher Schlüssel für Ver- und Entschlüsselung
+		\item Typischer Vertreter: \textbf{AES} (Advanced Encryption Standard)
+		\item Schneller Algorithmus mit Prozessorunterstützung
+		\item Geeignet auch für große Datenmengen
+	\end{itemize}
+\end{frame}
+\begin{frame}{Asymmetrische Verschlüsselung}
+	\begin{itemize}
+		\item Zwei Schlüssel: Verschlüsselung und Entschlüsselung (Private / Public)
+		\item Mathematisch sicher bei großer Schlüssellänge (4096 Bit)
+		\item Großer Rechenaufwand, daher nicht für große Datenmenge geeignet
+	\end{itemize}
+\end{frame}
+\begin{frame}{Kombination}
+	\begin{itemize}
+		\item Sitzungsschlüssel zufällig erzeugen
+		\item Sitzungsschlüssel asymmetrisch verschlüsseln
+		\item Sitzungsschlüssel für AES verwenden
+	\end{itemize}
+\end{frame}
+
+
 %-------------------------------------------------------
 \subsection{Local and Global installation}
 \begin{frame}{Installation}{Local and Global installation}
