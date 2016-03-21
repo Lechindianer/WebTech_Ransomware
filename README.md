@@ -26,6 +26,19 @@ Todo:
 Links:
 ------
 
+- Evolution of Ransomware: https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-evolution-of-ransomware.pdf
+- https://blog.varonis.com/a-brief-history-of-ransomware/
+- https://nakedsecurity.sophos.com/2016/02/17/locky-ransomware-what-you-need-to-know/
+- https://www.microsoft.com/security/portal/mmpc/shared/ransomware.aspx
+- https://www.f-secure.com/en/web/labs_global/removing-police-themed-ransomware
+- http://www.engadget.com/2016/03/17/teslacrypt-can-no-longer-be-cracked/
+- http://www.engadget.com/2016/02/19/hospital-ransomware-a-chilling-wake-up-call/
+- http://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising
+- http://www.theguardian.com/technology/2016/mar/13/autonomous-cars-self-driving-hack-mikko-hypponen-sxsw
+- http://www.heise.de/security/meldung/Krypto-Trojaner-Locky-Batch-Dateien-infizieren-Windows-Tool-verspricht-Schutz-3118188.html
+- http://www.heise.de/security/meldung/Online-Erpresser-verschluesseln-Datenbank-und-fordern-50-000-US-Dollar-Loesegeld-2535621.html
+- http://www.heise.de/security/artikel/TeslaCrypt-2-0-entschluesselt-3094987.html
+- http://www.heise.de/security/artikel/Erpressungs-Trojaner-wie-Locky-aussperren-3120956.html
 - http://www.bankinfosecurity.com/imperva-a-8860/op-1 
 - http://blog.talosintel.com/2016/03/teslacrypt-301-tales-from-crypto.html
 - http://www.macrumors.com/2016/03/06/mac-ransomware-transmission/- 
