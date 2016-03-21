@@ -23,9 +23,10 @@
 %-------------------------------------------------------
 
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
+\usepackage{eurosym}
 
 %-------------------------------------------------------
 % DEFFINING AND REDEFINING COMMANDS
@@ -91,7 +92,7 @@
 	\end{figure} 
 \end{frame}
 
-\begin{frame}{Kleine Viren-Kunde}{Wer verwendet2 Viren?}
+\begin{frame}{Kleine Viren-Kunde}{Wer verwendet Viren?}
 %-------------------------------------------------------
 \begin{itemize}
 	\item Security Researcher
@@ -99,6 +100,7 @@
 	\item Extremisten
 	\item Regierungen (Bundestrojaner, Stuxnet)
 	\item Sonstige Kriminelle
+	\item Scriptkiddies
 \end{itemize}
 \end{frame}
 
@@ -120,16 +122,36 @@
 	\end{figure}
 \end{frame}
 
+
+
+
+
+
 %-------------------------------------------------------
-\section{Installation}
+\section{Ransomware}
 %-------------------------------------------------------
-\subsection{Source files}
-\begin{frame}{Installation}{Source files}
+\subsection{Aktuelle Beispiele}
+\begin{frame}{Aktuelle Beispiele}{Dettelbach}
 %-------------------------------------------------------
 
-\begin{block}{}
-The theme contains 4 source files:
-\end{block}
+	\begin{itemize}
+		\item Stadtverwaltung von Dettelbach (Unterfranken)\footnote{\url{https://www.polizei.bayern.de/unterfranken/news/presse/aktuell/index.html/237562}}
+		\item Server mit "`Tesla-Crypt"' infiziert
+		\item Infektion wahrscheinlich per E-Mail-Anhang
+		\item Backups vorhanden\pause , aber nicht wiederherstellbar
+		\item Nach Zahlung von ca. \EUR{490} konnten große Teile der Daten entschlüsselt werden
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Aktuelle Beispiele}{Lukaskrankenhaus Neuss}
+%-------------------------------------------------------
+
+	\begin{itemize}
+		\item Infektion ebenfalls per E-Mail-Anhang\footnote{\url{http://www1.wdr.de/cyberangriff-lukaskrankenhaus-neuss-100.html}}
+		\item Sofortmaßnahme: Abschalten aller Dienst und Server (intern und extern) \pause
+		\item Organisation mit Formularen auf Papier (Notfallplan vorhanden)
+		\item Aktuelles Backup vorhanden\pause , und auch wiederherstellbar
+	\end{itemize}
 \end{frame}
 
 %-------------------------------------------------------
