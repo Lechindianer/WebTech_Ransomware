@@ -13,6 +13,7 @@ Gliederung:
 - Klassifizierung diverser Ransomware-Varianten
 - User Training
 - Backups
+- Zukünftige Gefahren in Anbetracht von Cloud-Diensten und IoT
 - Fazit
 - (Live-Demo?)
 
