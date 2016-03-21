@@ -118,7 +118,19 @@
 	\begin{figure}[p]
 		\centering
 		\includegraphics[scale=0.11]{dos_viruses.png}
-		\let\thefootnote\relax\footnote{https://archive.org/details/malwaremuseum}
+		\let\thefootnote\relax\footnote{\url{https://archive.org/details/malwaremuseum}}
+	\end{figure}
+\end{frame}
+\begin{frame}{Kleine Viren-Kunde}{AIDS}
+%-------------------------------------------------------
+	\begin{figure}[p]
+		\begin{itemize}
+			\item Trojaner \textbf{AIDS} (1989)
+			\item Infektion über präparierte Diskette
+			\item Nach dem 90. Boot: \\ Verschlüsselung aller Daten auf der Systemfestplatte
+			\item Aufforderung ca. \EUR{170} an ein Postfach in Panama zu senden
+		\end{itemize}
+		\let\thefootnote\relax\footnote{c't Magazin 07/2016 S.77}
 	\end{figure}
 \end{frame}
 
@@ -131,27 +143,29 @@
 \section{Ransomware}
 %-------------------------------------------------------
 \subsection{Aktuelle Beispiele}
-\begin{frame}{Aktuelle Beispiele}{Dettelbach}
+\begin{frame}{Dettelbach}
 %-------------------------------------------------------
 
 	\begin{itemize}
-		\item Stadtverwaltung von Dettelbach (Unterfranken)\footnote{\url{https://www.polizei.bayern.de/unterfranken/news/presse/aktuell/index.html/237562}}
+		\item Stadtverwaltung von Dettelbach (Unterfranken)
 		\item Server mit "`Tesla-Crypt"' infiziert
 		\item Infektion wahrscheinlich per E-Mail-Anhang
 		\item Backups vorhanden\pause , aber nicht wiederherstellbar
 		\item Nach Zahlung von ca. \EUR{490} konnten große Teile der Daten entschlüsselt werden
 	\end{itemize}
+	\let\thefootnote\relax\footnote{\url{https://www.polizei.bayern.de/unterfranken/news/presse/aktuell/index.html/237562}}
 \end{frame}
 
-\begin{frame}{Aktuelle Beispiele}{Lukaskrankenhaus Neuss}
+\begin{frame}{Lukaskrankenhaus Neuss}
 %-------------------------------------------------------
 
 	\begin{itemize}
-		\item Infektion ebenfalls per E-Mail-Anhang\footnote{\url{http://www1.wdr.de/cyberangriff-lukaskrankenhaus-neuss-100.html}}
+		\item Infektion ebenfalls per E-Mail-Anhang
 		\item Sofortmaßnahme: Abschalten aller Dienst und Server (intern und extern) \pause
 		\item Organisation mit Formularen auf Papier (Notfallplan vorhanden)
 		\item Aktuelles Backup vorhanden\pause , und auch wiederherstellbar
 	\end{itemize}
+	\let\thefootnote\relax\footnote{\url{http://www1.wdr.de/cyberangriff-lukaskrankenhaus-neuss-100.html}}
 \end{frame}
 
 
@@ -165,20 +179,69 @@
 		\item Geeignet auch für große Datenmengen
 	\end{itemize}
 \end{frame}
+\subsection{Asymmetrische Verschlüsselung}
 \begin{frame}{Asymmetrische Verschlüsselung}
 	\begin{itemize}
-		\item Zwei Schlüssel: Verschlüsselung und Entschlüsselung (Private / Public)
+		\item Zwei Schlüssel: Verschlüsselung und Entschlüsselung (Öffentlich / Privat)
 		\item Mathematisch sicher bei großer Schlüssellänge (4096 Bit)
 		\item Großer Rechenaufwand, daher nicht für große Datenmenge geeignet
 	\end{itemize}
 \end{frame}
-\begin{frame}{Kombination}
+\subsection{Hybride Verschlüsselung}
+\begin{frame}{Hybride Verschlüsselung}
 	\begin{itemize}
 		\item Sitzungsschlüssel zufällig erzeugen
-		\item Sitzungsschlüssel asymmetrisch verschlüsseln
 		\item Sitzungsschlüssel für AES verwenden
+		\item Sitzungsschlüssel asymmetrisch verschlüsseln
 	\end{itemize}
 \end{frame}
+
+\section{Ransomware}
+\subsection{Beispiele}
+\begin{frame}{Ransomware}{Beispiele}
+	\begin{itemize}
+		\item Encryptor RaaS (Ransomware as a Service)
+		\item TeslaCrypt (Version 2.0, 3.0, 4.0)
+		\item Locky
+		\item CryptoLocker
+		\item Cryptowall
+	\end{itemize}
+\end{frame}
+
+\subsection{Funktionsweise}
+\begin{frame}{Ransomware}{Infektion}
+		\begin{itemize}
+			\item weite Streuung
+			\item meist unspezifisch
+			\item Verbereitungswege:
+				\begin{itemize}
+					\item E-Mail
+					\item Webseiten (Drive-By-Downloads, Wordpress)
+					\item Makros (Excel, Word)
+				\end{itemize}
+			\item Umgehen der Heuristiken von Virenscannern (Warten)
+		\end{itemize}
+\end{frame}
+\begin{frame}{Ransomware}{Angriff}
+		\begin{itemize}
+			\item C\&C-Server finden und kontaktieren 
+			\item Asym. Schlüssel erstellen (Öffentlich und Privat)
+			\item Privaten Schlüssel an Server senden und lokal vernichten
+			\item Dateien verschlüsseln:
+				\begin{itemize}
+					\item Zufälligen Sitzungsschlüssel erstellen
+					\item Datei damit verschlüsseln
+					\item Sitzungsschlüssel mit öffentlichen Schlüssel verschlüsseln und mit Datei speichern
+					\item Sitzungsschlüssel vernichten
+				\end{itemize}
+			\item Nutzer informieren
+		\end{itemize}
+\end{frame}
+
+
+
+
+
 
 
 %-------------------------------------------------------
