@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[notes,10pt]{beamer}
 \usetheme[
 %%% option passed to the outer theme
 %    progressstyle=fixedCircCnt,   % fixedCircCnt, movingCircCnt (moving is deault)
@@ -107,7 +107,7 @@
 \begin{frame}{Kleine Viren-Kunde}{Arten von Viren}
 %-------------------------------------------------------
 \begin{itemize}
-	\item Viren, Würmer, Trojaner?
+	\item Viren, Würmer, Trojaner
 	\item Botnetze
 	\item Ransomware
 \end{itemize}
@@ -121,6 +121,50 @@
 		\let\thefootnote\relax\footnote{\url{https://archive.org/details/malwaremuseum}}
 	\end{figure}
 \end{frame}
+
+
+\begin{frame}{Kleine Viren-Kunde}{Botnetze}
+%-------------------------------------------------------
+	\begin{itemize}
+		\item Massenhaft übernommene Computer
+		\item Alle Platformen
+		\item Kapazität wird vom Botnetz-Betreiber vermietet
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Kleine Viren-Kunde}{Ransomware Unterscheidung}
+%-------------------------------------------------------
+
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.25]{bka-trojaner.png}
+		\let\thefootnote\relax\footnote{\url{http://bka-trojaner.de/screenshots/bka-trojaner2.png}}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}{Kleine Viren-Kunde}{Ransomware Unterscheidung}
+%-------------------------------------------------------
+
+	\begin{block}{Locker Ransomware}
+		\begin{itemize}
+			\item FBI, BKA, Bundespolizei, ...
+			\item Entfernen leicht möglich, da kein Schaden
+			\item Was bringt Zukunft?
+			\note{Bei IoT z.B. ist Interaktion nicht/kaum möglich\\}
+	   	\end{itemize}
+	   	\note{Locker Ransomware war nur für Heimanwender brauchbar. Admins wussten sich dagegen zu wehren}
+	\end{block}
+ 	\begin{block}{Crypto Ransomware}
+	  	\begin{itemize}
+			\item Nutzer hat Schaden
+			\item Entfernen schwierig
+	   	\end{itemize}
+  	\end{block}
+
+\end{frame}
+
 \begin{frame}{Kleine Viren-Kunde}{AIDS}
 %-------------------------------------------------------
 	\begin{figure}[p]
@@ -134,9 +178,32 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Kleine Viren-Kunde}{Geschichte der Ransomware}
+%-------------------------------------------------------
+	\begin{itemize}
+		\item<1-> 1989: AIDS
+		\item<2-> 2013: CryptoLocker (Windows)
+		\note[item]<2>{\textbf{Cryptolocker:}}
+		\note[item]<2>{(40\% aller Betroffenen zahlten}
+		\note[item]<2>{insgesamt ca. 3 Millionen \$}
+		\note[item]<2>{scannt Netzlaufwerke und angeschlossene USB-Geräte, ...)}
+		\item<3-> 2013: FBI ransomware (OS X)
+		\item<4-> 2014: Simplocker (Android)
+		\item<4-> 2014: Oleg Pliss (iOS) (Locker Ransomware)
+		\item<5-> 2016: Locky (Windows)
+		\item<5-> 2016: KeRanger (OS X)
+	\end{itemize}
+\end{frame}
 
-
-
+\begin{frame}{Kleine Viren-Kunde}{Evolution der Ransomware}
+%-------------------------------------------------------
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.28]{ransom-evolution.png}
+		\let\thefootnote\relax\footnote{\url{https://www.symantec.com/content/en/us/enterprise/media/security\_response/whitepapers/the-evolution-of-ransomware.pdf}}
+		\note{Wegen schlechter anonymer internationaler Zahlungsmöglichkeit ist Anzahl von Ransomware bis zum Erscheinen von Bitcoin zurück gegangen}
+	\end{figure}
+\end{frame}
 
 
 %-------------------------------------------------------
@@ -161,13 +228,12 @@
 
 	\begin{itemize}
 		\item Infektion ebenfalls per E-Mail-Anhang
-		\item Sofortmaßnahme: Abschalten aller Dienst und Server (intern und extern) \pause
+		\item Sofortmaßnahme: Abschalten aller Dienste und Server (intern und extern) \pause
 		\item Organisation mit Formularen auf Papier (Notfallplan vorhanden)
 		\item Aktuelles Backup vorhanden\pause , und auch wiederherstellbar
 	\end{itemize}
 	\let\thefootnote\relax\footnote{\url{http://www1.wdr.de/cyberangriff-lukaskrankenhaus-neuss-100.html}}
 \end{frame}
-
 
 \section{Kryptographie}
 \subsection{Symmetrische Verschlüsselung}
@@ -213,7 +279,7 @@
 		\begin{itemize}
 			\item weite Streuung
 			\item meist unspezifisch
-			\item Verbereitungswege:
+			\item Verbreitungswege:
 				\begin{itemize}
 					\item E-Mail
 					\item Webseiten (Drive-By-Downloads, Wordpress)
@@ -238,33 +304,6 @@
 		\end{itemize}
 \end{frame}
 
-
-
-
-
-
-
-%-------------------------------------------------------
-\subsection{Local and Global installation}
-\begin{frame}{Installation}{Local and Global installation}
-%-------------------------------------------------------
-  The theme can be installed for \textbf{local} or \textbf{global} use.
-  \pause
-  \begin{block}{Local Installation}
-  \begin{itemize}    
-    \item Local installation is the simplest way of installing the theme. 
-    \item You need to placing the 4 source files in the same folder as your presentation. When you download the theme, the 4 theme files are located in the {\tt local} folder.
-  \end{itemize}
-  \end{block}
-
-  \begin{block}{Global Installation}
-  \begin{itemize}
-     \item If you wish to make the theme globally available, you must put the files in your local latex directory tree. The location of the root of the local directory tree depends on your operating system and the latex distribution. 
-     \item Detailed steps on how to proceed installation under various operating systems can be found at Beamer documentation.
-  \end{itemize}
-  \end{block}
-\end{frame}
-     
 
 %-------------------------------------------------------
 \subsection{Required Packages}
@@ -360,6 +399,7 @@
     \textbackslash end\{frame\}\}}
 \end{block}
 \end{frame}
+
 
 
 {\1
