@@ -148,18 +148,26 @@
 %-------------------------------------------------------
 	% Siehe Liste weiter unten. Evtl. Liste nach hier
 	\begin{block}{Locker Ransomware}
+	\note{- Locker Ransomware spielt mit dem Vertrauen der unbedarften Anwender in die Gesetzeshüter bzw. der Angst vor Bestrafung\\}
+	\note{Von den 12 meistbefallennen Ländern sind 11 davon G20-Staaten - also Staaten mit verhältnismäßig reichen Einwohnern. Die Chance diese zum Bezahlen zu bewegen sind relativ groß.\\}
 		\begin{itemize}
 			\item FBI, BKA, Bundespolizei, ...
 			\item Entfernen leicht möglich, da kein Schaden
 			\item Was bringt Zukunft?
-			\note{Bei IoT z.B. ist Interaktion nicht/kaum möglich\\}
+			\note{- Bei IoT z.B. ist Interaktion nicht/kaum möglich\\}
+			\note{- Was ist mit autonomen Autos?\\}
 	   	\end{itemize}
-	   	\note{Locker Ransomware war nur für Heimanwender brauchbar. Admins wussten sich dagegen zu wehren}
+	   	\note{- Locker Ransomware war nur für Heimanwender brauchbar. Admins wussten sich dagegen zu wehren\\}
 	\end{block}
  	\begin{block}{Crypto Ransomware}
 	  	\begin{itemize}
 			\item Nutzer hat Schaden
 			\item Entfernen schwierig
+			\note{- Crypto Ransomware zeigt oft einen Countdown, bis zu dem die Nutzer bezahlt haben müssen, um dem Verlust ihrer Daten vorzubeugen. So wird ein Einschreiten von Admins oder Polizei verhindert}
+			\note{- Landesabhängiger Preis für Wiedererhalt der Daten je nach Kaufkraft des Landes - basierend auf IP-Adresse}
+			\note{- Crypto wird mit BTC bezahlt, während Locker eher auf Paysafecard und ähnliches aus dem Laden zurückgreift. Dies hat die Ursache darin, dass der Computer ja gesperrt ist und nicht zum BTC kaufen genutzt werden kann.\\}
+			\note{- BTC wird in Videos erklärt und wie der Nutzer sie kaufen und verwenden kann.\\}
+			\note{- Manche Ransomware erlaubt es 5 zufällige Dateien zu entschlüsseln, um dem Nutzer zu zeigen, dass es mit Bezahlung möglich ist.}
 	   	\end{itemize}
   	\end{block}
 
@@ -242,6 +250,18 @@
 	\let\thefootnote\relax\footnote{\url{http://www1.wdr.de/cyberangriff-lukaskrankenhaus-neuss-100.html}}
 \end{frame}
 
+\begin{frame}{Malvertising der BBC}
+%-------------------------------------------------------
+
+	\begin{itemize}
+		\item Webseiten wurden gezielt attackiert
+		\item Opfer der Kampagne: New York Times, BBC, AOL, NFL
+		\item Advertisments wurden gekapert
+		\item Funktioniert dank Browser Betriebssystem-unabhängig
+	\end{itemize}
+	\let\thefootnote\relax\footnote{\url{http://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising}}
+\end{frame}
+
 \section{Kryptographie}
 \subsection{Symmetrische Verschlüsselung}
 \begin{frame}{Symmetrische Verschlüsselung}
@@ -311,6 +331,114 @@
 		\end{itemize}
 \end{frame}
 
+
+
+  For using the Feather Theme you will need the Bemaer class installed and the following 2 packages
+  \begin{itemize}
+    \item TikZ\footnote{TikZ is a package for creating beautiful graphics. Have a look at these \chref{http://www.texample.net/tikz/examples/}{online examples} or the \chref{http://tug.ctan.org/tex-archive/graphics/pgf/base/doc/generic/pgf/pgfmanual.pdf}{pgf user manual}.}
+    \item calc
+  \end{itemize}
+  Due to the fact that the packages are very common they should be included in your latex distribution in the first place.
+\end{frame}
+
+%-------------------------------------------------------
+\section{User Interface}
+\subsection{Loading the Theme and Theme Options}
+\begin{frame}{User Interface}{Loading the Theme and Theme Options}
+%-------------------------------------------------------
+
+  \begin{block}{The Presentation Theme}
+    The Feather Theme can be loaded in a familiar way. In the reamble of your {\tt tex} file you must type\\ \vspace{5pt} 
+    {\tt \textbackslash usetheme[<options>]\{Feather\}}\\ \vspace{5pt} 
+    The presentation theme loads the inner, outer and color Feather theme files and passes the {\tt <options>} on to these files.
+  \end{block}
+  \begin{block}{The Inner and Outher Themes}
+    If you wish you can load only the inner, or the outher theme directly by\\ \vspace{5pt} 
+    {\tt \textbackslash useinnertheme\{Feather\}} (and it has no options)\\ \vspace{5pt} 
+    {\tt \textbackslash useoutertheme[<options>]\{Feather\}} (it has one option)\\
+    \hspace{20pt}{\tt progressstyle=\{fixedCircCnt or movingCircCnt\}} \\
+    \begin{itemize}
+    \item which set how the progress is illustrated;
+    \item the value {\tt movingCircCnt} is the default.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{User Interface}{Loading the Theme and Theme Options}
+
+  \begin{block}{The Color Theme}
+    Also you can load only the color theme by writing in the preamble of the {\tt tex} file 
+    
+    \vspace{5pt} 
+    
+    \begin{itemize}
+    \item {\tt \textbackslash usecolortheme\{Feather\}}
+    \end{itemize}
+    
+    \vspace{5pt}
+    
+    ...or to change the colors of the various elements in the theme
+    
+    \vspace{5pt} 
+    \begin{itemize}
+    \item Change the bar colors: \\    
+    {\tt \textbackslash setbeamercolor \{Feather\}\{fg=<color>, bg=<color>\}}
+    
+    \vspace{2pt} 
+    
+    \item Change the color of the structural elements: \\    
+    {\tt \textbackslash setbeamercolor\{structure\}\{fg=<color>\}}
+    
+    \vspace{2pt} 
+    
+    \item Change the frame title text color:\\
+    {\tt \textbackslash setbeamercolor\{frametitle\}\{fg=<color>\}}
+    
+    \vspace{2pt} 
+    
+    \item Change the normal text color background:    
+    {\tt \textbackslash setbeamercolor\{normal text\}\{fg=<color>, bg=<color>\}}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+
+%-------------------------------------------------------
+\subsection{Feather image}
+\begin{frame}{User Interface}{The Feather Background Image}
+%-------------------------------------------------------
+
+\begin{block}{The Feather Background Image}
+    \begin{itemize}
+    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
+    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
+    \end{itemize} 
+    
+    \vspace{5pt} 
+    
+  {\tt \{\textbackslash 1bg\\
+    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
+    \ldots\\
+    \textbackslash end\{frame\}\}}
+\end{block}
+\end{frame}
+
+
+\subsection{Gegenmaßnahmen}
+\begin{frame}{Gegenmaßnahmen}
+%-------------------------------------------------------
+	\begin{itemize}
+		\item Regelmäßige Offline-Backups, sicher verwahrt
+		\item Makros in Dokumenten nicht aktivieren (von Microsoft standardmäßig deaktiviert)
+		\item Vorsicht bei Anhängen!
+		\item Nicht mit mehr Nutzerrechten am Computer sein, als unbedingt notwendig!
+		\item Patche frühzeitig und oft!
+		\item Ad-Blocker verwenden (siehe Malvertising)
+		\item Anti-Ransomware-Tools verwenden (siehe \footnote{http://www.heise.de/security/meldung/Krypto-Trojaner-Locky-Batch-Dateien-infizieren-Windows-Tool-verspricht-Schutz-3118188.html})
+		\let\thefootnote\relax\footnote{\url{https://nakedsecurity.sophos.com/2016/02/17/locky-ransomware-what-you-need-to-know/}}
+ 	\end{itemize}
+
+\end{frame}
 
 
 {\1
