@@ -146,7 +146,7 @@
 
 \begin{frame}{Kleine Viren-Kunde}{Ransomware Unterscheidung}
 %-------------------------------------------------------
-
+	% Siehe Liste weiter unten. Evtl. Liste nach hier
 	\begin{block}{Locker Ransomware}
 		\begin{itemize}
 			\item FBI, BKA, Bundespolizei, ...
@@ -212,7 +212,6 @@
 \subsection{Aktuelle Beispiele}
 \begin{frame}{Dettelbach}
 %-------------------------------------------------------
-
 	\begin{itemize}
 		\item Stadtverwaltung von Dettelbach (Unterfranken)
 		\item Server mit "`Tesla-Crypt"' infiziert
@@ -220,7 +219,15 @@
 		\item Backups vorhanden\pause , aber nicht wiederherstellbar
 		\item Nach Zahlung von ca. \EUR{490} konnten große Teile der Daten entschlüsselt werden
 	\end{itemize}
+		
 	\let\thefootnote\relax\footnote{\url{https://www.polizei.bayern.de/unterfranken/news/presse/aktuell/index.html/237562}}
+\end{frame}
+\begin{frame}[plain]
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.55]{backup_cartoon.png}
+		\let\thefootnote\relax\footnote{\url{http://www.evolveip.net/wp-content/uploads/2015/11/cartoon.png}}
+	\end{figure}
 \end{frame}
 
 \begin{frame}{Lukaskrankenhaus Neuss}
@@ -250,7 +257,7 @@
 	\begin{itemize}
 		\item Zwei Schlüssel: Verschlüsselung und Entschlüsselung (Öffentlich / Privat)
 		\item Mathematisch sicher bei großer Schlüssellänge (4096 Bit)
-		\item Großer Rechenaufwand, daher nicht für große Datenmenge geeignet
+		\item Hoher Rechenaufwand, daher nicht für große Datenmenge geeignet
 	\end{itemize}
 \end{frame}
 \subsection{Hybride Verschlüsselung}
@@ -302,102 +309,6 @@
 				\end{itemize}
 			\item Nutzer informieren
 		\end{itemize}
-\end{frame}
-
-
-%-------------------------------------------------------
-\subsection{Required Packages}
-\begin{frame}{Installation}{Required Packages}
-%-------------------------------------------------------
-
-  For using the Feather Theme you will need the Bemaer class installed and the following 2 packages
-  \begin{itemize}
-    \item TikZ\footnote{TikZ is a package for creating beautiful graphics. Have a look at these \chref{http://www.texample.net/tikz/examples/}{online examples} or the \chref{http://tug.ctan.org/tex-archive/graphics/pgf/base/doc/generic/pgf/pgfmanual.pdf}{pgf user manual}.}
-    \item calc
-  \end{itemize}
-  Due to the fact that the packages are very common they should be included in your latex distribution in the first place.
-\end{frame}
-
-%-------------------------------------------------------
-\section{User Interface}
-\subsection{Loading the Theme and Theme Options}
-\begin{frame}{User Interface}{Loading the Theme and Theme Options}
-%-------------------------------------------------------
-
-  \begin{block}{The Presentation Theme}
-    The Feather Theme can be loaded in a familiar way. In the reamble of your {\tt tex} file you must type\\ \vspace{5pt} 
-    {\tt \textbackslash usetheme[<options>]\{Feather\}}\\ \vspace{5pt} 
-    The presentation theme loads the inner, outer and color Feather theme files and passes the {\tt <options>} on to these files.
-  \end{block}
-  \begin{block}{The Inner and Outher Themes}
-    If you wish you can load only the inner, or the outher theme directly by\\ \vspace{5pt} 
-    {\tt \textbackslash useinnertheme\{Feather\}} (and it has no options)\\ \vspace{5pt} 
-    {\tt \textbackslash useoutertheme[<options>]\{Feather\}} (it has one option)\\
-    \hspace{20pt}{\tt progressstyle=\{fixedCircCnt or movingCircCnt\}} \\
-    \begin{itemize}
-    \item which set how the progress is illustrated;
-    \item the value {\tt movingCircCnt} is the default.
-    \end{itemize}
-  \end{block}
-\end{frame}
-
-\begin{frame}{User Interface}{Loading the Theme and Theme Options}
-
-  \begin{block}{The Color Theme}
-    Also you can load only the color theme by writing in the preamble of the {\tt tex} file 
-    
-    \vspace{5pt} 
-    
-    \begin{itemize}
-    \item {\tt \textbackslash usecolortheme\{Feather\}}
-    \end{itemize}
-    
-    \vspace{5pt}
-    
-    ...or to change the colors of the various elements in the theme
-    
-    \vspace{5pt} 
-    \begin{itemize}
-    \item Change the bar colors: \\    
-    {\tt \textbackslash setbeamercolor \{Feather\}\{fg=<color>, bg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the color of the structural elements: \\    
-    {\tt \textbackslash setbeamercolor\{structure\}\{fg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the frame title text color:\\
-    {\tt \textbackslash setbeamercolor\{frametitle\}\{fg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the normal text color background:    
-    {\tt \textbackslash setbeamercolor\{normal text\}\{fg=<color>, bg=<color>\}}
-    \end{itemize}
-  \end{block}
-\end{frame}
-
-
-%-------------------------------------------------------
-\subsection{Feather image}
-\begin{frame}{User Interface}{The Feather Background Image}
-%-------------------------------------------------------
-
-\begin{block}{The Feather Background Image}
-    \begin{itemize}
-    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
-    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
-    \end{itemize} 
-    
-    \vspace{5pt} 
-    
-  {\tt \{\textbackslash 1bg\\
-    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
-    \ldots\\
-    \textbackslash end\{frame\}\}}
-\end{block}
 \end{frame}
 
 
