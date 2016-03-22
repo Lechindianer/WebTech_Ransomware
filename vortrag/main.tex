@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[notes,10pt]{beamer}
 \usetheme[
 %%% option passed to the outer theme
 %    progressstyle=fixedCircCnt,   % fixedCircCnt, movingCircCnt (moving is deault)
@@ -177,9 +177,32 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Kleine Viren-Kunde}{Geschichte der Ransomware}
+%-------------------------------------------------------
+	\begin{itemize}
+		\item<1-> 1989: AIDS
+		\item<2-> 2013: CryptoLocker (Windows)
+		\note[item]<2>{\textbf{Cryptolocker:}}
+		\note[item]<2>{(40\% aller Betroffenen zahlten}
+		\note[item]<2>{insgesamt ca. 3 Millionen \$}
+		\note[item]<2>{scannt Netzlaufwerke und angeschlossene USB-Geräte, ...)}
+		\item<3-> 2013: FBI ransomware (OS X)
+		\item<4-> 2014: Simplocker (Android)
+		\item<4-> 2014: Oleg Pliss (iOS) (Locker Ransomware)
+		\item<5-> 2016: Locky (Windows)
+		\item<5-> 2016: KeRanger (OS X)
+	\end{itemize}
+\end{frame}
 
-
-
+\begin{frame}{Kleine Viren-Kunde}{Evolution der Ransomware}
+%-------------------------------------------------------
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.28]{ransom-evolution.png}
+		\let\thefootnote\relax\footnote{\url{https://www.symantec.com/content/en/us/enterprise/media/security\_response/whitepapers/the-evolution-of-ransomware.pdf}}
+		\note{Wegen schlechter anonymer internationaler Zahlungsmöglichkeit ist Anzahl von Ransomware bis zum Erscheinen von Bitcoin zurück gegangen}
+	\end{figure}
+\end{frame}
 
 
 %-------------------------------------------------------
