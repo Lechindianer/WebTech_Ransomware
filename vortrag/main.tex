@@ -281,13 +281,23 @@
 	\end{itemize}
 \end{frame}
 \subsection{Hybride Verschlüsselung}
-\begin{frame}{Hybride Verschlüsselung}
-	\begin{itemize}
-		\item Sitzungsschlüssel zufällig erzeugen
-		\item Sitzungsschlüssel für AES verwenden
-		\item Sitzungsschlüssel asymmetrisch verschlüsseln
-	\end{itemize}
+%\begin{frame}{Hybride Verschlüsselung}
+%	\begin{itemize}
+%		\item Sitzungsschlüssel zufällig erzeugen
+%		\item Sitzungsschlüssel für AES verwenden
+%		\item Sitzungsschlüssel asymmetrisch verschlüsseln
+%	\end{itemize}
+%\end{frame}
+\begin{frame}[plain]
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.25]{hybrid.png}
+		\let\thefootnote\relax\footnote{\url{https://de.wikipedia.org/wiki/Datei:Hybride_Verschlüsselung.png}}
+	\end{figure}
 \end{frame}
+% https://de.wikipedia.org/wiki/Datei:Hybride_Verschl%C3%BCsselung.png
+
+
 
 \section{Ransomware}
 \subsection{Beispiele}
@@ -327,19 +337,31 @@
 					\item Sitzungsschlüssel mit öffentlichen Schlüssel verschlüsseln und mit Datei speichern
 					\item Sitzungsschlüssel vernichten
 				\end{itemize}
-			\item Nutzer informieren
 		\end{itemize}
 \end{frame}
 
-
-
-  For using the Feather Theme you will need the Bemaer class installed and the following 2 packages
-  \begin{itemize}
-    \item TikZ\footnote{TikZ is a package for creating beautiful graphics. Have a look at these \chref{http://www.texample.net/tikz/examples/}{online examples} or the \chref{http://tug.ctan.org/tex-archive/graphics/pgf/base/doc/generic/pgf/pgfmanual.pdf}{pgf user manual}.}
-    \item calc
-  \end{itemize}
-  Due to the fact that the packages are very common they should be included in your latex distribution in the first place.
+\begin{frame}[plain]
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.30]{locky-recover-instructions.png}
+		\let\thefootnote\relax\footnote{\url{https://labsblog.f-secure.com/2016/02/22/locky-clearly-bad-behavior/}}
+	\end{figure}
 \end{frame}
+
+\begin{frame}{Ransomware}{Bezahlung}
+	\begin{itemize}
+		\item Nutzer informieren
+		\item Genaue Anleitung unter Onion-Adresse (Tor-Netzwerk)
+		\note{Kurze Erklärung zu Tor}
+		\item Bezahlung per Bitcoin
+		\note{Kurze Erklärung zu Bitcoin}
+		\item Meist mit Zeitlimit und Drohungen
+	\end{itemize}
+\end{frame}
+
+
+
+
 
 %-------------------------------------------------------
 \section{User Interface}
