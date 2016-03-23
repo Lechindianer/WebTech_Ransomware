@@ -3,7 +3,7 @@
 %%% option passed to the outer theme
 %    progressstyle=fixedCircCnt,   % fixedCircCnt, movingCircCnt (moving is deault)
   ]{Feather}
-  
+
 % If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
 
 % Change the bar colors:
@@ -49,7 +49,7 @@
 \subtitle[Ransomware]{}
 
 \author[S. Abwandner, M. Beham, P. Schmid]
-{      Sebastian Abwandner, Michael Beham, Pascal Schmid 
+{      Sebastian Abwandner, Michael Beham, Pascal Schmid
 }
 
 \institute[]
@@ -89,7 +89,7 @@
 		\centering
 		\includegraphics[scale=0.3]{hackers_internet.jpg}
 		\let\thefootnote\relax\footnote{https://hackadaycom.files.wordpress.com/2013/03/hackers\_internet.jpg}
-	\end{figure} 
+	\end{figure}
 \end{frame}
 
 \begin{frame}{Kleine Viren-Kunde}{Wer verwendet Viren?}
@@ -163,11 +163,6 @@
 	  	\begin{itemize}
 			\item Nutzer hat Schaden
 			\item Entfernen schwierig
-			\note{- Crypto Ransomware zeigt oft einen Countdown, bis zu dem die Nutzer bezahlt haben müssen, um dem Verlust ihrer Daten vorzubeugen. So wird ein Einschreiten von Admins oder Polizei verhindert}
-			\note{- Landesabhängiger Preis für Wiedererhalt der Daten je nach Kaufkraft des Landes - basierend auf IP-Adresse}
-			\note{- Crypto wird mit BTC bezahlt, während Locker eher auf Paysafecard und ähnliches aus dem Laden zurückgreift. Dies hat die Ursache darin, dass der Computer ja gesperrt ist und nicht zum BTC kaufen genutzt werden kann.\\}
-			\note{- BTC wird in Videos erklärt und wie der Nutzer sie kaufen und verwenden kann.\\}
-			\note{- Manche Ransomware erlaubt es 5 zufällige Dateien zu entschlüsseln, um dem Nutzer zu zeigen, dass es mit Bezahlung möglich ist.}
 	   	\end{itemize}
   	\end{block}
 
@@ -227,7 +222,7 @@
 		\item Backups vorhanden\pause , aber nicht wiederherstellbar
 		\item Nach Zahlung von ca. \EUR{490} konnten große Teile der Daten entschlüsselt werden
 	\end{itemize}
-		
+
 	\let\thefootnote\relax\footnote{\url{https://www.polizei.bayern.de/unterfranken/news/presse/aktuell/index.html/237562}}
 \end{frame}
 \begin{frame}[plain]
@@ -260,6 +255,66 @@
 		\item Funktioniert dank Browser Betriebssystem-unabhängig
 	\end{itemize}
 	\let\thefootnote\relax\footnote{\url{http://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising}}
+\end{frame}
+
+\begin{frame}{Faktoren von Ransomware}
+%-------------------------------------------------------
+
+	\begin{itemize}
+		\item Ökonomie
+		\item Psychologie
+		\item Social-Engineering
+		\note{- Crypto Ransomware zeigt oft einen Countdown, bis zu dem die Nutzer bezahlt haben müssen, um dem Verlust ihrer Daten vorzubeugen. So wird ein Einschreiten von Admins oder Polizei verhindert}
+		\note{- Landesabhängiger Preis für Wiedererhalt der Daten je nach Kaufkraft des Landes - basierend auf IP-Adresse}
+			\note{- Crypto wird mit BTC bezahlt, während Locker eher auf Paysafecard und ähnliches aus dem Laden zurückgreift. Dies hat die Ursache darin, dass der Computer ja gesperrt ist und nicht zum BTC kaufen genutzt werden kann.\\}
+		\note{- BTC wird in Videos erklärt und wie der Nutzer sie kaufen und verwenden kann.\\}
+		\note{- Manche Ransomware erlaubt es 5 zufällige Dateien zu entschlüsseln, um dem Nutzer zu zeigen, dass es mit Bezahlung möglich ist.}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Faktoren von Ransomware}{Locker Ransomware}
+%-------------------------------------------------------
+\begin{columns}
+\begin{column}{6cm}
+\textbf{Zentrale und periphere Route zur Überzeugung}
+\begin{itemize}
+\item \textbf{Zentral:} Vorsichtige und durchdache Abwägung der Vorzüge
+\item \textbf{Peripher:} Positive/Negative Konnotation mit Worten
+\end{itemize}
+\end{column}
+\begin{column}{5cm}
+\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.3]{Lockdroid.png}
+
+	\end{figure}
+\end{column}
+\end{columns}
+
+	\let\thefootnote\relax\footnote{\url{https://www.symantec.com/content/en/us/enterprise/media/security\_response/whitepapers/the-evolution-of-ransomware.pdf}}
+	\note{\textbf{Locker Ransomware}\\}
+	\note{- Befolgen von Authoritäten\\}
+	\note{- Instinktive Trigger dank IP-Adresse (Furcht)\\}
+	\note{- If you have broken the law, it can be used against you
+. Furcht wegen illegalen Downloads um Hilfe zu bitten.\\}
+	\note{- Wenn Opfer nach der Errornachricht suchen, sehen sie eher die rechtliche Legitimität als deren erfundene Gestalt. Vor allem da die meisten Menschen mit den präsentierten Gesetzestexten nichts anfangen können.\\}
+\end{frame}
+
+\begin{frame}{Faktoren von Ransomware}{Crypto Ransomware}
+%-------------------------------------------------------
+
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.33]{Cryptolocker.png}
+	\end{figure}
+
+	\let\thefootnote\relax\footnote{\url{https://www.symantec.com/content/en/us/enterprise/media/security\_response/whitepapers/the-evolution-of-ransomware.pdf}}
+	\note{\textbf{Crypto Ransomware}\\}
+	\note{- Timeout setzt Entscheidungsfindung unter Druck\\}
+	\note{- Sunk costs: Bereits getätigtes Investment (Zeit/Geld) wird aufgerechnet und wirkt, dass das Scamopfer zahlt.\\}
+	\note{- Furcht vor Gewissensbissen, falls sie nicht zahlen.\\}
+	\note{- \textbf{Ellsberg-Paradoxon:} Eine Strafe mit sicherer Wahrscheinlichkeit wird eher gewählt, als ein positives Ergebnis mit unsicherer Wahrscheinlichkeit.\\}
+
 \end{frame}
 
 \section{Kryptographie}
@@ -327,7 +382,7 @@
 \end{frame}
 \begin{frame}{Ransomware}{Angriff}
 		\begin{itemize}
-			\item C\&C-Server finden und kontaktieren 
+			\item C\&C-Server finden und kontaktieren
 			\item Asym. Schlüssel erstellen (Öffentlich und Privat)
 			\item Privaten Schlüssel an Server senden und lokal vernichten
 			\item Dateien verschlüsseln:
@@ -371,89 +426,6 @@
 \end{frame}
 
 
-%-------------------------------------------------------
-\section{User Interface}
-\subsection{Loading the Theme and Theme Options}
-\begin{frame}{User Interface}{Loading the Theme and Theme Options}
-%-------------------------------------------------------
-
-  \begin{block}{The Presentation Theme}
-    The Feather Theme can be loaded in a familiar way. In the reamble of your {\tt tex} file you must type\\ \vspace{5pt} 
-    {\tt \textbackslash usetheme[<options>]\{Feather\}}\\ \vspace{5pt} 
-    The presentation theme loads the inner, outer and color Feather theme files and passes the {\tt <options>} on to these files.
-  \end{block}
-  \begin{block}{The Inner and Outher Themes}
-    If you wish you can load only the inner, or the outher theme directly by\\ \vspace{5pt} 
-    {\tt \textbackslash useinnertheme\{Feather\}} (and it has no options)\\ \vspace{5pt} 
-    {\tt \textbackslash useoutertheme[<options>]\{Feather\}} (it has one option)\\
-    \hspace{20pt}{\tt progressstyle=\{fixedCircCnt or movingCircCnt\}} \\
-    \begin{itemize}
-    \item which set how the progress is illustrated;
-    \item the value {\tt movingCircCnt} is the default.
-    \end{itemize}
-  \end{block}
-\end{frame}
-
-\begin{frame}{User Interface}{Loading the Theme and Theme Options}
-
-  \begin{block}{The Color Theme}
-    Also you can load only the color theme by writing in the preamble of the {\tt tex} file 
-    
-    \vspace{5pt} 
-    
-    \begin{itemize}
-    \item {\tt \textbackslash usecolortheme\{Feather\}}
-    \end{itemize}
-    
-    \vspace{5pt}
-    
-    ...or to change the colors of the various elements in the theme
-    
-    \vspace{5pt} 
-    \begin{itemize}
-    \item Change the bar colors: \\    
-    {\tt \textbackslash setbeamercolor \{Feather\}\{fg=<color>, bg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the color of the structural elements: \\    
-    {\tt \textbackslash setbeamercolor\{structure\}\{fg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the frame title text color:\\
-    {\tt \textbackslash setbeamercolor\{frametitle\}\{fg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the normal text color background:    
-    {\tt \textbackslash setbeamercolor\{normal text\}\{fg=<color>, bg=<color>\}}
-    \end{itemize}
-  \end{block}
-\end{frame}
-
-
-%-------------------------------------------------------
-\subsection{Feather image}
-\begin{frame}{User Interface}{The Feather Background Image}
-%-------------------------------------------------------
-
-\begin{block}{The Feather Background Image}
-    \begin{itemize}
-    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
-    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
-    \end{itemize} 
-    
-    \vspace{5pt} 
-    
-  {\tt \{\textbackslash 1bg\\
-    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
-    \ldots\\
-    \textbackslash end\{frame\}\}}
-\end{block}
-\end{frame}
-
-
 \subsection{Gegenmaßnahmen}
 \begin{frame}{Gegenmaßnahmen}
 %-------------------------------------------------------
@@ -481,7 +453,7 @@
 	\begin{figure}[p]
 		\centering
 		\includegraphics[scale=0.1]{questionmark.png}
-	\end{figure}  
+	\end{figure}
 \end{frame}}
 
 \end{document}
