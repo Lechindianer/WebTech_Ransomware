@@ -5,7 +5,7 @@ Gliederung:
 - Fallbeispiele
 - Geschichte (Win/Apache/Wordpress/OS X)
 - Funktionsweise
-- Krypto Einführung
+- Krypto Einführung
 - Virenscanner Funktionsweise / Heuristik / Umgehung von Heuristiken
 - Command and Control server
 - Bitcoin (Michael?)
@@ -13,16 +13,16 @@ Gliederung:
 - Klassifizierung diverser Ransomware-Varianten
 - User Training
 - Backups
-- Zukünftige Gefahren in Anbetracht von Cloud-Diensten und IoT
+- Zukünftige Gefahren in Anbetracht von Cloud-Diensten und IoT
 - Fazit
 - (Live-Demo?)
 
 Todo:
 -----
 
-- VM für Wordpress aufsetzen
-- Windows VM für Randsomware aus Spamordner aufsetzen
-- Latex-Vorlage für Beamer einchecken
+- VM für Wordpress aufsetzen
+- Windows VM für Randsomware aus Spamordner aufsetzen
+- Latex-Vorlage für Beamer einchecken
 
 Links:
 ------
@@ -61,3 +61,4 @@ Links:
 - https://link.springer.com/article/10.1007/s11416-008-0092-2
 - http://www.tandfonline.com/doi/abs/10.1080/10658980701576412
 - http://web.gccaz.edu/~dcost/cis105/ransomware-a-growing-menace.pdf (Vorsicht: von der gelben Seuche!)
+- https://blog.malwarebytes.org/intelligence/2016/03/look-into-locky/
