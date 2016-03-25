@@ -1,0 +1,304 @@
+
+\documentclass[12pt,a4paper,bibliography=totocnumbered,listof=totocnumbered]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage[right]{eurosym}
+\usepackage[printonlyused,footnote]{acronym}
+\usepackage{subfig}
+\usepackage{floatflt}
+\usepackage{float}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{colortbl}
+\usepackage{paralist}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage[right]{eurosym}
+% \usepackage{picins}
+\usepackage[subfigure,titles]{tocloft}
+\usepackage[pdfpagelabels=true]{hyperref}
+\usepackage[svgnames,table,hyperref]{xcolor} % verschiedene Farbenauswahl
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage[breaklinks]{hyperref}
+\usepackage{placeins} % für FloatBarrier
+\usepackage{enumitem}
+
+\usepackage{wrapfig} % Wrap text around img
+\usepackage{eurosym}
+
+\def\UrlBreaks{\do\/\do-\do?\do_}
+
+%\usepackage{minted}
+
+%\usepackage{cite}
+%\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+% generate uml diagram
+%\usepackage{tikz} 
+%\usetikzlibrary{arrows,shadows}
+%\usepackage{pgf-umlsd}
+\usepackage{framed}
+
+\usepackage{epstopdf}
+\epstopdfsetup{update}
+
+\usepackage[font=normalsize,labelfont=bf,tableposition=top]{caption}
+
+%\usepackage[babel, german=quotes, autostyle]{csquotes}
+%\renewcommand{\blockquote}[1]{\textit{#1}}
+%\renewcommand*{\mkblockquote}[4]{\textit{\enquote{#1}}#2#4#3}
+%\renewcommand{\enqoute}[1]{\textit{#1}}
+
+%\blockquote[{\cite[25]{ocit_o:protokoll}}] {text}
+%\newcommand{\myblockquote}[2]{\blockquote[#1]{#2}}
+\newenvironment{itquote}
+{\begin{quote}\itshape}
+{\end{quote}}
+\newcommand{\itinquote}[1]{\textit{\glqq #1\grqq}}
+
+
+\usepackage{listings}
+\usepackage{verbatim}
+\lstset{basicstyle=\footnotesize, captionpos=b, breaklines=true, showstringspaces=false, tabsize=2, frame=lines, numbers=left, numberstyle=\tiny, xleftmargin=2em, framexleftmargin=2em}
+\makeatletter
+\def\l@lstlisting#1#2{\@dottedtocline{1}{0em}{1em}{\hspace{1,5em} Lst. #1}{#2}}
+\makeatother
+
+%\usepackage[numbers,square]{natbib}  %neu
+\usepackage[multiple,hang]{footmisc}
+
+\renewcaptionname{ngerman}{\figurename}{Abb.}
+
+
+\geometry{a4paper, top=27mm, left=31mm, right=21mm, bottom=35mm, headsep=10mm, footskip=12mm}
+%\geometry{a4paper, top=27mm, left=30mm, right=20mm, bottom=35mm, headsep=10mm, footskip=12mm}
+
+\hypersetup{unicode=false, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},
+	pdftitle={Studienarbeit: Web-Technologien},
+	pdfauthor={Abwandner / Beham / Schmidt},
+	pdfsubject={Ransomware},
+	%pdfcreator={\LaTeX\ with package \flqq hyperref\frqq},
+	pdfproducer={pdfTeX \the\pdftexversion.\pdftexrevision},
+	pdfkeywords={},
+	pdfnewwindow=true,
+	colorlinks=false,linkcolor=blue,citecolor=blue,filecolor=magenta,urlcolor=blue}
+\pdfinfo{/CreationDate (D:20160601000000)}
+
+\definecolor{dunkelgrau}{rgb}{0.9,0.9,1.0}
+
+\usepackage[
+	backend=biber,
+  %style=authoryear-icomp,
+	style=authortitle-ibid,
+	sortlocale=de_DE,
+	natbib=true,
+	url=true,
+	doi=true,
+	eprint=false
+]{biblatex}
+
+\addbibresource{library.bib}
+
+
+
+\begin{document}
+
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+
+% Kopf- und Fusszeile
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\leftmark}{\rightmark}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\thesection\space\contentsname}
+\lfoot{Ransomware}
+\cfoot{}
+\rfoot{\ \linebreak Seite \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Vorspann
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\theHsection}{\Roman{section}}
+\pagenumbering{Roman}
+
+% -----------------------------------------------------------
+% Deckblatt
+% -----------------------------------------------------------
+\include{deckblatt}
+
+\setcounter{page}{1}
+\doublespacing
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
+%\include{chapters/erstellungserklaerung} % TODO
+
+%\include{chapters/nda}
+
+% -----------------------------------------------------------
+% Abstract
+% -------------------------------------------------------------
+%\include{chapters/kurzfassung}
+
+
+% -----------------------------------------------------------
+% Verzeichnisse
+% -----------------------------------------------------------
+%% TODO Typ vor Nummer
+%\renewcommand{\cfttabpresnum}{Tab. }
+%\renewcommand{\cftfigpresnum}{Abb. }
+%\settowidth{\cfttabnumwidth}{Abb. 10\quad}
+%\settowidth{\cftfignumwidth}{Abb. 10\quad}
+%\setlength{\cftsecnumwidth}{2.5em}% Set length of number width in ToC for \subsection
+%\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
+%\singlespacing
+\rhead{INHALTSVERZEICHNIS}
+%\renewcommand{\contentsname}{III Inhaltsverzeichnis}
+%\phantomsection
+%\addcontentsline{toc}{section}{\texorpdfstring{III \ \  \hspace{0.35em}Inhaltsverzeichnis}{Inhaltsverzeichnis}}
+%\addtocounter{section}{1}
+\onehalfspacing
+\tableofcontents % Write out the Table of Contents (Inhaltsverzeichnis)
+\pagebreak
+\doublespacing
+% -----------------------------------------------------------
+% Inhalt
+% -----------------------------------------------------------
+% Abstände Überschrift
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+\titlespacing{\subsection}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+\titlespacing{\subsubsection}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+
+% Kopfzeile
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\subsubsectionmark}[1]{}
+\lhead{Kapitel \thesection}
+\rhead{\rightmark}
+
+\doublespacing
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theHsection}{\arabic{section}}
+\setcounter{section}{0}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% -----------------------------------------------------------
+% Einzelne Kapitel:
+% Einleitung - zum Thema führen, warum wichtig, welche Gesichtspunkte, Aktuelles
+% Related Work - Literatur, Papers, wiss. Lücke, Forschungsfrage
+% Hintergrund - Algorithmen, Funktionsweisen, auch: Festplattenfunktion 10-15 Seiten
+% Evaluation - Use Cases, Tools, Funktionalitäten, Bewertung
+% Conclusion - Future Work
+% -----------------------------------------------------------
+
+%\include{chapters/chapter_1_einleitung}
+%\include{chapters/chapter_2_related}
+%\include{chapters/chapter_3_hintergrund}
+%\include{chapters/chapter_4_evaluation}
+%\include{chapters/chapter_5_conclusion}
+
+
+\include{arbeit}
+%\appendix
+%\include{chapters/appendix} % TODO: Testplan
+
+% -----------------------------------------------------------
+% einzelne Verzeichnisse
+% -----------------------------------------------------------
+
+%\renewcommand{\thesection}{\Roman{section}}
+%\renewcommand{\theHsection}{\Roman{section}}
+%%\pagenumbering{Roman}
+%\renewcommand{\cfttabpresnum}{Tab. }
+%\renewcommand{\cftfigpresnum}{Abb. }
+%%\settowidth{\cfttabnumwidth}{Abb. 10\quad}
+%%\settowidth{\cftfignumwidth}{Abb. 10\quad}
+%\setcounter{section}{3}
+%
+%\rhead{VERZEICHNISSE}
+%\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
+%\renewcommand*\listfigurename{Abbildungsverzeichnis \vspace{1em}}
+
+%\listoffigures
+%\listoftables
+
+%\addtocontents{lof}{\vspace{-0.5em}}
+% \renewcommand{\vspace}[2]{}% Gobble 2 arguments after \vspace
+\pagebreak
+
+%\listoftables % Write out the List of Tables (Tabellenverzeichnis)
+%\pagebreak
+%\renewcommand{\lstlistlistingname}{Listing-Verzeichnis}
+%{\labelsep2cm\lstlistoflistings}
+%\pagebreak
+
+% -------------------------------------------------------------
+% Abkürzungen
+% -----------------------------------------------------------
+%\include{chapters/abkuerzungsverzeichnis}
+
+
+% -------------------------------------------------------------
+% Literatur
+% -------------------------------------------------------------
+\renewcommand\refname{Literaturverzeichnis}
+%\bibliographystyle{abstract}
+
+% Weitere Möglichkeiten für Quellenangaben
+%\bibliographystyle{plaindin}
+%%%\bibliographystyle{plainurl}
+%\bibliographystyle{alphadin}
+%\bibliographystyle{natdin}
+
+\nocite{*}
+\printbibliography
+
+Alle Links wurden zuletzt \today ~besucht.
+\pagebreak
+
+% -----------------------------------------------------------
+% Anhang
+% -----------------------------------------------------------
+%\pagenumbering{Roman}
+%\setcounter{page}{1}
+
+%\lhead{Anhang \thesection}
+
+%\begin{appendix}
+%\section*{Anhang}
+%\phantomsection
+%\addcontentsline{toc}{section}{Anhang}
+%\addtocontents{toc}{\vspace{-0.5em}}
+
+%\section{view.dtd}\label{anhang:dtd}
+%\verbatiminput{document/view_v1.dtd} % Anfügen von Text-Dateien
+%\pagebreak
+
+%\section{pom.xml}\label{anhang:pom}
+%\verbatiminput{document/pom.xml}
+
+
+%\subsection*{Screenshot}
+%\label{app:screenshot}
+%Unterkategorie, die nicht im Inhaltsverzeichnis auftaucht.
+
+%\end{appendix}
+
+
+
+\end{document}
