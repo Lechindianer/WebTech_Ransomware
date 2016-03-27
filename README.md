@@ -55,6 +55,7 @@
 ### Sonstige Ransomware
 
 - http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-riegelt-den-gesamten-Rechner-ab-3150917.html
+- http://www.bleepingcomputer.com/news/security/petya-ransomware-skips-the-files-and-encrypts-your-hard-drive-instead/
 - http://www.macrumors.com/2016/03/06/mac-ransomware-transmission/
 - https://www.f-secure.com/weblog/archives/00002716.html
 - https://www.f-secure.com/weblog/archives/00002704.html
