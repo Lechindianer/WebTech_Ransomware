@@ -53,18 +53,28 @@ Für genauere Betrachtungen sei die einschlägige Fachliteratur hierüber empfoh
 \label{sec:sym_verschl}
 
 Die symmetrische Verschlüsselung folgt dem Konzept, das sowohl für die Ver- als auch die Entschlüsselung jeweils die gleichen Schlüssel verwendet werden.
-
+\afterpage{
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{img/SymKrypto.png}
+	\caption{Symmetrische Verschlüsselung\footnotemark}
+	\label{fig:sym_verschl}
+	\end{figure}
+	\footnotetext{Quelle: Bananenfalter (Public Domain) \\ \url{https://commons.wikimedia.org/wiki/File:Orange_blue_symmetric_cryptography_de.svg}}
+}
 Es gibt eine Reihe an unterschiedlichsten Algorithmen und Verfahren für symmetrische Verschlüsselung, allerdings hat sich mit \textsc{AES} ein Verfahren als de-facto Standard für verschiedenste Anwendungsbereiche etabliert.
 
 AES ist hierbei eine Abkürzung für Advanced Encryption Standard und wird meist synonym für den Rijndael-Algorithmus verwendet. Dieses Verfahren ist heute so verbreitet, dass beispielsweise in modernen Prozessoren direkt als Maschinenbefehl zur Verfügung steht und somit deutlich größere Datenraten verarbeiten kann. \\
 Benchmarks zeigen hier beispielshaft einen 6-fachen Speedup mit einer Datenrate von ca. 1.35 GB/s mit CPU-Unterstützung verglichen mit 212 MB/s ohne 
 CPU-Unterstützung.\footcite{aes:benchmark}
 
-Vor allem durch die Hardware-Unterstützung ist des moderner Ransomware möglich, die CPU-Last während der Verschlüsselung derart in Grenzen zu halten, dass der Nutzer keine spürbare Langsamkeit des Systems bemerkt. 
+Vor allem durch die Hardware-Unterstützung ist es moderner Ransomware möglich, die CPU-Last während der Verschlüsselung derart in Grenzen zu halten, dass der Nutzer keine spürbare Langsamkeit des Systems bemerkt. 
 
 
 \subsection{Asymmetrische Verschlüsselung}
 \label{sec:asym_verschl}
+
+
 
 \subsection{Hybride Verschlüsselung}
 \label{sec:hybride_verschl}
@@ -73,7 +83,12 @@ Vor allem durch die Hardware-Unterstützung ist des moderner Ransomware möglich
 
 
 \section{Überblick Anonyme Zahlungen}
- Ukash / Western Union / Bitcoin 
+Eine weitere Komponente warum heutige Ransomware so erfolgreich ist, stellt die Möglichkeit einer anonymen Bezahlung dar, vor allem in Hinsicht auf die Anonymität des Zahlungsempfängers. Hier stehen dem Angreifer verschiedene Zahlungsverfahren zur Auswahl, von eher traditioneller Überweisung bis hin zu Bitcoins.
+
+\subsection{Ukash}
+\subsection{Paysafecard}
+\subsection{Western Union}
+\subsection{Bitcoin}
 
 \section{Überblick Tor-Netzwerk}
 	Tor / Aufbau / Hidden Services / Anonymität
@@ -81,7 +96,12 @@ Vor allem durch die Hardware-Unterstützung ist des moderner Ransomware möglich
 \section{Genereller Ablauf}
  CC Server / Verschlüsselung / Zahlung
 
+\section{Weitere Beobachtungen}
+Ransomware as a service
+
 \section{Gegenmaßnahmen}
+ 
+Backups / Heuristiken / Backups / Nutzerschulung / Backups / 
 
 \section{Schluss}
 
