@@ -52,10 +52,15 @@
 - http://www.bankinfosecurity.com/imperva-a-8860/op-1
 - http://blog.fox-it.com/2016/03/24/website-of-security-certification-provider-spreading-ransomware/
 
-### Sonstige Ransomware
+### Petya
 
 - http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-riegelt-den-gesamten-Rechner-ab-3150917.html
+- www.heise.de/newsticker/meldung/Petya-Den-Erpressungs-Trojaner-stoppen-bevor-er-die-Festplatten-verschluesselt-3153388.html
 - http://www.bleepingcomputer.com/news/security/petya-ransomware-skips-the-files-and-encrypts-your-hard-drive-instead/
+
+### Sonstige Ransomware
+
+- www.heise.de/newsticker/meldung/Erpressungs-Trojaner-mit-neuer-Taktik-Erst-schauen-dann-verschluesseln-3153767.html
 - http://www.macrumors.com/2016/03/06/mac-ransomware-transmission/
 - https://www.f-secure.com/weblog/archives/00002716.html
 - https://www.f-secure.com/weblog/archives/00002704.html
