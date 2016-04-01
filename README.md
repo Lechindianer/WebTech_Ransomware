@@ -19,9 +19,9 @@
 
 ## Todo:
 
-- VM für Wordpress aufsetzen
-- Windows VM für Randsomware aus Spamordner aufsetzen
-- Latex-Vorlage für Beamer einchecken
+- [] VM für Wordpress aufsetzen
+- [] Windows VM für Randsomware aus Spamordner aufsetzen
+- [x] Latex-Vorlage für Beamer einchecken
 
 ## Links:
 
