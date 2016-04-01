@@ -57,6 +57,8 @@
 - http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-riegelt-den-gesamten-Rechner-ab-3150917.html
 - www.heise.de/newsticker/meldung/Petya-Den-Erpressungs-Trojaner-stoppen-bevor-er-die-Festplatten-verschluesselt-3153388.html
 - http://www.bleepingcomputer.com/news/security/petya-ransomware-skips-the-files-and-encrypts-your-hard-drive-instead/
+- https://labsblog.f-secure.com/2016/04/01/petya-disk-encrypting-ransomware/
+- www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-Neue-Infektionswelle-rollt-an-Verschluesselung-bisher-nicht-knackbar-3160177.html
 
 ### Sonstige Ransomware
 
