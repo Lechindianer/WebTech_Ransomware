@@ -473,25 +473,47 @@
 \subsection{Gegenmaßnahmen}
 \begin{frame}{Gegenmaßnahmen}
 %-------------------------------------------------------
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.3]{hackers_internet.jpg}
+		\let\thefootnote\relax\footnote{https://hackadaycom.files.wordpress.com/2013/03/hackers\_internet.jpg}
+	\end{figure}
+\end{frame}
+\begin{frame}{Prävention}
+	Nach Empfehlungen des BSI
 	\begin{itemize}
-		\item Makros in Dokumenten nicht aktivieren (von Microsoft standardmäßig deaktiviert)
-		\item Vorsicht bei Anhängen!
-		\item Nicht mit mehr Nutzerrechten am Computer sein, als unbedingt notwendig!
-		\item Patche frühzeitig und oft!
-		\item Ad-Blocker verwenden (siehe Malvertising)
-		\item Anti-Ransomware-Tools verwenden (siehe \footnote{http://www.heise.de/security/meldung/Krypto-Trojaner-Locky-Batch-Dateien-infizieren-Windows-Tool-verspricht-Schutz-3118188.html})
-		\let\thefootnote\relax\footnote{\url{https://nakedsecurity.sophos.com/2016/02/17/locky-ransomware-what-you-need-to-know/}}
+		\item Aktuelle Patchlevel
+		\item Angriffsfläche minimieren (Browser, Skripts im OS)
+		\item Makros deaktivieren (Office etc.)
+		\item Text-Mails erzwingen
+		\item Serverseitige Mailfilter
+		\item Netzlaufwerke sichern
+		\item Netzwerke segmentieren
+		\item Zugänge sichern (RDP, Admin-Zugänge)
+		\item Aktueller Virenschutz 
+		\item Nutzerschulung
+			\note{Nutzer sind kreativ beim Umgehen von Sicherheitsmaßnahmen (Bsp. Kennwörter)}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Schadensbegrenzung}
+	\begin{itemize}
+		\item Betroffene System abschotten und abschalten
+		\item Kommunikation mit C2-Servern unterbinden
+		\item Zentrale Resourcen schützen (Fileserver)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Notfallkonzept}
+%-------------------------------------------------------
+	\begin{itemize}
+		\item Aktuelle Offline-Backups
+		\note{Zeitabstände nach akzeptablen Verlust}
+		\item Rücksicherung testen
+						
+		\item Ersatzpläne für Systemausfälle
  	\end{itemize}
 
-\end{frame}
-\begin{frame}{Gegenmaßnahmen}
-	\begin{itemize}
-		\item Regelmäßige Offline-Backups, sicher verwahrt
-		\note{Zeitabstände nach akzeptablen Verlust}
-		\item Nutzerschulung
-		\note{Nutzer sind kreativ beim Umgehen von Sicherheitsmaßnahmen}
-		
-	\end{itemize}
 \end{frame}
 
 
