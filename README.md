@@ -84,6 +84,7 @@
 - https://books.google.de/books?hl=de&lr=&id=rE9yaepbeLIC&oi=fnd&pg=PT28&dq=ransomware&ots=b3TFIw-Iuo&sig=JdWVVerUv_ScUSMSbn5sjWgOsyY#v=onepage&q=ransomware&f=false
 - https://link.springer.com/chapter/10.1007/978-3-319-20550-2_1
 - https://twitter.com/abuse_ch/status/713709717449805824/photo/1
+- http://blog.talosintel.com/2016/04/ransomware.html
 
 ### Gegenmaßnahmen
 
