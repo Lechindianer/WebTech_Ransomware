@@ -59,9 +59,10 @@
 - http://www.bleepingcomputer.com/news/security/petya-ransomware-skips-the-files-and-encrypts-your-hard-drive-instead/
 - https://labsblog.f-secure.com/2016/04/01/petya-disk-encrypting-ransomware/
 - www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-Neue-Infektionswelle-rollt-an-Verschluesselung-bisher-nicht-knackbar-3160177.html
+- www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-geknackt-Passwort-Generator-veroeffentlicht-3167064.html
 - https://twitter.com/mikko/status/714158149352235009/photo/1
 - Debugging Petya bootloader with IDA https://www.youtube.com/watch?v=7rtMX9zS55I
-- Petya ECDH key exchange https://www.youtube.com/watch?v=nAx9QROI1h4
+- Petya ECDH key exchange https://www.youtube.com/watch?v=nAx9QROI1h4 
 
 ### Sonstige Ransomware
 
