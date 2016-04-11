@@ -85,6 +85,7 @@
 - https://link.springer.com/chapter/10.1007/978-3-319-20550-2_1
 - https://twitter.com/abuse_ch/status/713709717449805824/photo/1
 - http://blog.talosintel.com/2016/04/ransomware.html
+- https://threatpost.com/latest-flash-zero-day-being-used-to-push-ransomware/117248/
 
 ### Gegenmaßnahmen
 
