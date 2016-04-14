@@ -72,6 +72,7 @@
 - https://www.f-secure.com/weblog/archives/00002704.html
 - https://www.f-secure.com/weblog/archives/00002640.html
 - http://www.techrepublic.com/article/mac-os-x-ransomware-how-keranger-is-a-shadow-of-malware-to-come/
+- http://www.heise.de/newsticker/meldung/Nur-72-Stunden-Erpressungs-Trojaner-Jigsaw-droht-Dateien-zu-loeschen-3172217.html
 
 ### Allgemein
 
