@@ -92,6 +92,7 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - https://twitter.com/abuse_ch/status/713709717449805824/photo/1
 - http://blog.talosintel.com/2016/04/ransomware.html
 - https://threatpost.com/latest-flash-zero-day-being-used-to-push-ransomware/117248/
+- www.heise.de/newsticker/meldung/Entschluesselungs-Tool-verfuegbar-Webseite-identifiziert-Erpressungs-Trojaner-3173463.html
 
 ### Gegenmaßnahmen
 
