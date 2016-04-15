@@ -17,6 +17,10 @@
 - Fazit
 - (Live-Demo?)
 
+## Paper-Beispiel:
+
+https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
+
 ## Todo:
 
 - [ ] VM für Wordpress aufsetzen
