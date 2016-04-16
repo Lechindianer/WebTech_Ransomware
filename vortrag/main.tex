@@ -4,6 +4,19 @@
 %    progressstyle=fixedCircCnt,   % fixedCircCnt, movingCircCnt (moving is deault)
   ]{Feather}
 
+
+% Vorstellung / Themenbegründung
+% Am Anfang Begriffsklärung
+
+% Jahreszahlen nur letzte Folie
+% Symantec Diagramm nach Unterscheidung
+% Schrödingers Backup
+% Nicht wiederhestellbares Backup zu Krankenhaus
+% Dettelbach raus
+
+% Quellen
+
+
 % If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
 
 % Change the bar colors:
@@ -108,32 +121,33 @@
 %-------------------------------------------------------
 \begin{itemize}
 	\item Viren, Würmer, Trojaner
-	\item Botnetze
-	\item Ransomware
+	\item Bots, Botnetze
+	\item Scareware, Ransomware
+	\note Scareware: Beheben der Gefärdungen erfordert Vollversion
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Kleine Viren-Kunde}{DOS-Viren}
-%-------------------------------------------------------
-	\begin{figure}[p]
-		\centering
-		\includegraphics[scale=0.11]{dos_viruses.png}
-		\let\thefootnote\relax\footnote{\url{https://archive.org/details/malwaremuseum}}
-	\end{figure}
-\end{frame}
 
 
-\begin{frame}{Kleine Viren-Kunde}{Botnetze}
-%-------------------------------------------------------
-	\begin{itemize}
-		\item Massenhaft übernommene Computer
-		\item Alle Platformen
-		\item Kapazität wird vom Botnetz-Betreiber vermietet
-	\end{itemize}
-\end{frame}
+%\begin{frame}{Kleine Viren-Kunde}{DOS-Viren}
+%	\begin{figure}[p]
+%		\centering
+%		\includegraphics[scale=0.11]{dos_viruses.png}
+%		\let\thefootnote\relax\footnote{\url{https://archive.org/details/malwaremuseum}}
+%	\end{figure}
+%\end{frame}
 
 
-\begin{frame}{Kleine Viren-Kunde}{Ransomware Unterscheidung}
+%\begin{frame}{Kleine Viren-Kunde}{Botnetze}
+%	\begin{itemize}
+%		\item Massenhaft übernommene Computer
+%		\item Alle Platformen
+%		\item Kapazität wird vom Botnetz-Betreiber vermietet
+%	\end{itemize}
+%\end{frame}
+
+
+\begin{frame}{Kleine Viren-Kunde}{Ransomware}
 %-------------------------------------------------------
 
 	\begin{figure}[p]
@@ -144,7 +158,7 @@
 
 \end{frame}
 
-\begin{frame}{Kleine Viren-Kunde}{Ransomware Unterscheidung}
+\begin{frame}{Kleine Viren-Kunde}{Ransomware}
 %-------------------------------------------------------
 	% Siehe Liste weiter unten. Evtl. Liste nach hier
 	\begin{block}{Locker Ransomware}
@@ -168,35 +182,41 @@
 
 \end{frame}
 
-\begin{frame}{Kleine Viren-Kunde}{AIDS}
-%-------------------------------------------------------
-	\begin{figure}[p]
-		\begin{itemize}
-			\item Trojaner \textbf{AIDS} (1989)
-			\item Infektion über präparierte Diskette
-			\item Nach dem 90. Boot: \\ Verschlüsselung aller Daten auf der Systemfestplatte
-			\item Aufforderung ca. \EUR{170} an ein Postfach in Panama zu senden
-		\end{itemize}
-		\let\thefootnote\relax\footnote{c't Magazin 07/2016 S.77}
-	\end{figure}
-\end{frame}
 
 \begin{frame}{Kleine Viren-Kunde}{Geschichte der Ransomware}
 %-------------------------------------------------------
 	\begin{itemize}
-		\item<1-> 1989: AIDS
-		\item<2-> 2013: CryptoLocker (Windows)
-		\note[item]<2>{\textbf{Cryptolocker:}}
-		\note[item]<2>{(40\% aller Betroffenen zahlten}
-		\note[item]<2>{insgesamt ca. 3 Millionen \$}
-		\note[item]<2>{scannt Netzlaufwerke und angeschlossene USB-Geräte, ...)}
-		\item<3-> 2013: FBI ransomware (OS X)
-		\item<4-> 2014: Simplocker (Android)
-		\item<4-> 2014: Oleg Pliss (iOS) (Locker Ransomware)
-		\item<5-> 2016: Locky (Windows)
-		\item<5-> 2016: KeRanger (OS X)
+		\item 1989: AIDS
+		\item 2013: CryptoLocker (Windows)
+		%\note[item]<2>{\textbf{Cryptolocker:}}
+		%\note[item]<2>{(40\% aller Betroffenen zahlten}
+		%\note[item]<2>{insgesamt ca. 3 Millionen \$}
+		%\note[item]<2>{scannt Netzlaufwerke und angeschlossene USB-Geräte, ...)}
+		\item 2013: FBI ransomware (OS X)
+		\item 2014: Simplocker (Android)
+		\item 2014: Oleg Pliss (iOS) (Locker Ransomware)
+		\item 2016: Locky (Windows)
+		\item 2016: KeRanger (OS X)
+		\item 2016: Petya (Windows)
 	\end{itemize}
 \end{frame}
+
+
+\begin{frame}{Kleine Viren-Kunde}{AIDS}
+%-------------------------------------------------------
+	\begin{figure}[p]
+		\begin{itemize}
+			\item Ransomware \textbf{AIDS} (1989)
+			\item Programm mit Informationen über HIV/AIDS Ansteckung
+			\item Weitergabe als legitimes Programm per Diskette \pause
+			\item Kosten und Vorgehen in EULA genannt
+			\item Nach dem 90. Boot: \\ Verschlüsselung aller Daten auf der Systemfestplatte
+			\item Aufforderung ca. \EUR{170} an ein Postfach in Panama zu senden
+		\end{itemize}
+		\let\thefootnote\relax\footnote{Quelle: c't Magazin 07/2016 S.77}
+	\end{figure}
+\end{frame}
+
 
 \begin{frame}{Kleine Viren-Kunde}{Evolution der Ransomware}
 %-------------------------------------------------------
@@ -208,30 +228,44 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Ransomware - Zeitliche Entwicklung}
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.37]{ransomware_zeitablauf.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Ransomware - Verteilung auf Länder}
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.37]{ransomware_laenderverteilung.png}
+	\end{figure}
+\end{frame}
+
 
 %-------------------------------------------------------
 \section{Ransomware}
 %-------------------------------------------------------
 \subsection{Aktuelle Beispiele}
-\begin{frame}{Dettelbach}
+%\begin{frame}{Dettelbach}
 %-------------------------------------------------------
-	\begin{itemize}
-		\item Stadtverwaltung von Dettelbach (Unterfranken)
-		\item Server mit "`Tesla-Crypt"' infiziert
-		\item Infektion wahrscheinlich per E-Mail-Anhang
-		\item Backups vorhanden\pause , aber nicht wiederherstellbar
-		\item Nach Zahlung von ca. \EUR{490} konnten große Teile der Daten entschlüsselt werden
-	\end{itemize}
+%	\begin{itemize}
+%		\item Stadtverwaltung von Dettelbach (Unterfranken)
+%		\item Server mit "`Tesla-Crypt"' infiziert
+%		\item Infektion wahrscheinlich per E-Mail-Anhang
+%		\item Backups vorhanden\pause , aber nicht wiederherstellbar
+%		\item Nach Zahlung von ca. \EUR{490} konnten große Teile der Daten entschlüsselt werden
+%	\end{itemize}
 
-	\let\thefootnote\relax\footnote{\url{https://www.polizei.bayern.de/unterfranken/news/presse/aktuell/index.html/237562}}
-\end{frame}
-\begin{frame}[plain]
-	\begin{figure}[p]
-		\centering
-		\includegraphics[scale=0.55]{backup_cartoon.png}
-		\let\thefootnote\relax\footnote{\url{http://www.evolveip.net/wp-content/uploads/2015/11/cartoon.png}}
-	\end{figure}
-\end{frame}
+%	\let\thefootnote\relax\footnote{\url{https://www.polizei.bayern.de/unterfranken/news/presse/aktuell/index.html/237562}}
+%\end{frame}
+%\begin{frame}[plain]
+%	\begin{figure}[p]
+%		\centering
+%		\includegraphics[scale=0.55]{backup_cartoon.png}
+%		\let\thefootnote\relax\footnote{\url{http://www.evolveip.net/wp-content/uploads/2015/11/cartoon.png}}
+%	\end{figure}
+%\end{frame}
 
 \begin{frame}{Lukaskrankenhaus Neuss}
 %-------------------------------------------------------
@@ -265,19 +299,6 @@
 	\let\thefootnote\relax\footnote{\url{http://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising}}
 \end{frame}
 
-\begin{frame}{Ransomware - Zeitliche Entwicklung}
-	\begin{figure}[p]
-		\centering
-		\includegraphics[scale=0.37]{ransomware_zeitablauf.png}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Ransomware - Verteilung auf Länder}
-	\begin{figure}[p]
-		\centering
-		\includegraphics[scale=0.37]{ransomware_laenderverteilung.png}
-	\end{figure}
-\end{frame}
 
 \begin{frame}{Faktoren von Ransomware}
 %-------------------------------------------------------
@@ -426,7 +447,7 @@
 \end{frame}
 \begin{frame}{Ransomware}{Angriff}
 		\begin{itemize}
-			\item C\&C-Server finden und kontaktieren
+			\item C2-Server finden und kontaktieren
 			\item Asym. Schlüssel erstellen (Öffentlich und Privat)
 			\item Privaten Schlüssel an Server senden und lokal vernichten
 			\item Dateien verschlüsseln:
