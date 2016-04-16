@@ -17,6 +17,10 @@
 - Fazit
 - (Live-Demo?)
 
+## Paper-Beispiel:
+
+https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
+
 ## Todo:
 
 - [ ] VM für Wordpress aufsetzen
@@ -71,6 +75,8 @@
 - https://www.f-secure.com/weblog/archives/00002716.html
 - https://www.f-secure.com/weblog/archives/00002704.html
 - https://www.f-secure.com/weblog/archives/00002640.html
+- http://www.techrepublic.com/article/mac-os-x-ransomware-how-keranger-is-a-shadow-of-malware-to-come/
+- http://www.heise.de/newsticker/meldung/Nur-72-Stunden-Erpressungs-Trojaner-Jigsaw-droht-Dateien-zu-loeschen-3172217.html
 
 ### Allgemein
 
@@ -86,6 +92,7 @@
 - https://twitter.com/abuse_ch/status/713709717449805824/photo/1
 - http://blog.talosintel.com/2016/04/ransomware.html
 - https://threatpost.com/latest-flash-zero-day-being-used-to-push-ransomware/117248/
+- www.heise.de/newsticker/meldung/Entschluesselungs-Tool-verfuegbar-Webseite-identifiziert-Erpressungs-Trojaner-3173463.html
 
 ### Gegenmaßnahmen
 
