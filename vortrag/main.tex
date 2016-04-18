@@ -59,7 +59,8 @@
       \textbf{Ransomware}
 }
 
-\subtitle[Ransomware]{Never gonna give you up}
+%\subtitle[Ransomware]{Never gonna give you up}
+\subtitle[Ransomware]{Yesterday - All my troubles seemed so far away}
 
 \author[S. Abwandner, M. Beham, P. Schmid]
 {      Sebastian Abwandner, Michael Beham, Pascal Schmid
@@ -123,7 +124,7 @@
 	\item Viren, Würmer, Trojaner
 	\item Bots, Botnetze
 	\item Scareware, Ransomware
-	\note Scareware: Beheben der Gefärdungen erfordert Vollversion
+	\note{Scareware: Beheben der Gefärdungen erfordert Vollversion}
 \end{itemize}
 \end{frame}
 
@@ -211,7 +212,7 @@
 			\item Weitergabe als legitimes Programm per Diskette \pause
 			\item Kosten und Vorgehen in EULA genannt
 			\item Nach dem 90. Boot: \\ Verschlüsselung aller Daten auf der Systemfestplatte
-			\item Aufforderung ca. \EUR{170} an ein Postfach in Panama zu senden
+			\item Aufforderung ca. \EUR{170} an ein Postfach in Panama zu senden \pause
 			\item Wissenschaftliche Arbeit mit Verbesserungsvorschlägen \\
 				Yount/Yung: Cryptovirology: Extortion-Based Security Threads and Countermeasures
 		\end{itemize}
@@ -230,12 +231,12 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Ransomware - Zeitliche Entwicklung}
-	\begin{figure}[p]
-		\centering
-		\includegraphics[scale=0.37]{ransomware_zeitablauf.png}
-	\end{figure}
-\end{frame}
+%\begin{frame}{Ransomware - Zeitliche Entwicklung}
+%	\begin{figure}[p]
+%		\centering
+%		\includegraphics[scale=0.37]{ransomware_zeitablauf.png}
+%	\end{figure}
+%\end{frame}
 
 \begin{frame}{Ransomware - Verteilung auf Länder}
 	\begin{figure}[p]
@@ -274,7 +275,7 @@
 	\begin{columns}
 		\begin{column}{6cm}		
 			\begin{itemize}
-				\item Infektion ebenfalls per E-Mail-Anhang
+				\item Infektion per E-Mail-Anhang
 				\item Sofortmaßnahme: Abschalten aller Dienste und Server (intern und extern)
 				\item Organisation mit Formularen auf Papier (Notfallplan vorhanden)
 				\item Aktuelles Backup vorhanden, und auch wiederherstellbar
@@ -512,6 +513,7 @@
 		\item Aktuelle Patchlevel
 		\item Angriffsfläche minimieren (Browser, Skripts im OS)
 		\item Makros deaktivieren (Office etc.)
+		\note{
 		\item Text-Mails erzwingen
 		\item Serverseitige Mailfilter
 		\item Netzlaufwerke sichern
@@ -521,13 +523,14 @@
 		\item Nutzerschulung
 			\note{Nutzer sind kreativ beim Umgehen von Sicherheitsmaßnahmen (Bsp. Kennwörter)}
 	\end{itemize}
+	\let\thefootnote\relax\footnote{https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Cyber-Sicherheit/Themen/Ransomware.pdf}
 \end{frame}
 
 \begin{frame}{Schadensbegrenzung}
 	\begin{itemize}
 		\item Betroffene System abschotten und abschalten
 		\item Kommunikation mit C2-Servern unterbinden
-		\item Zentrale Resourcen schützen (Fileserver)
+		\item Zentrale Ressourcen schützen (Fileserver etc.)
 	\end{itemize}
 \end{frame}
 
@@ -536,7 +539,7 @@
 	\begin{itemize}
 		\item Aktuelle Offline-Backups
 		\note{Zeitabstände nach akzeptablen Verlust}
-		\item Rücksicherung testen
+		\item Rücksicherung testen (Schrödingers Backup)
 						
 		\item Ersatzpläne für Systemausfälle
  	\end{itemize}
