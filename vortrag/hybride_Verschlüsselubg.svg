@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4D4D4D;stroke:#F7931E;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:12px;}
+	.st4{fill:none;stroke:#F7931E;stroke-width:4;stroke-miterlimit:10;}
+	.st5{fill:#F7931E;}
+	.st6{fill:#4D4D4D;stroke:#29ABE2;stroke-width:2;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#29ABE2;stroke-width:4;stroke-miterlimit:10;}
+	.st8{fill:#29ABE2;}
+</style>
+<path id="XMLID_1_" class="st0" d="M129.6,105.2H36c-6.6,0-12-5.4-12-12V51.3c0-6.6,5.4-12,12-12h93.6c6.6,0,12,5.4,12,12v41.9
+	C141.6,99.8,136.2,105.2,129.6,105.2z"/>
+<path id="XMLID_3_" class="st0" d="M126.3,201.9H32.7c-6.6,0-12-5.4-12-12V148c0-6.6,5.4-12,12-12h93.6c6.6,0,12,5.4,12,12v41.9
+	C138.3,196.5,132.9,201.9,126.3,201.9z"/>
+<text id="XMLID_4_" transform="matrix(1 0 0 1 30.0184 62.8237)"><tspan x="0" y="0" class="st1 st2 st3">Erzeugung Sitzungs-  </tspan><tspan x="30.5" y="14.4" class="st1 st2 st3">schlüssel</tspan></text>
+<g id="XMLID_5_">
+	<g id="XMLID_24_">
+		<line id="XMLID_27_" class="st4" x1="79" y1="105" x2="79" y2="127"/>
+		<g id="XMLID_25_">
+			<polygon id="XMLID_26_" class="st5" points="72.9,125 79.5,136.4 86.1,125 			"/>
+		</g>
+	</g>
+</g>
+<text id="XMLID_2_" transform="matrix(1 0 0 1 29.2389 154.5883)"><tspan x="0" y="0" class="st1 st2 st3">Verschlüsselung mit </tspan><tspan x="27.1" y="14.4" class="st1 st2 st3">Sitzungs- </tspan><tspan x="13.7" y="28.8" class="st1 st2 st3">schlüssel (AES)</tspan></text>
+<path id="XMLID_6_" class="st0" d="M137.1,303.4H21.9c-6.6,0-12-5.4-12-12v-45.9c0-6.6,5.4-12,12-12h115.2c6.6,0,12,5.4,12,12v45.9
+	C149.1,298,143.7,303.4,137.1,303.4z"/>
+<path id="XMLID_9_" class="st6" d="M309.9,299.1h-93.6c-6.6,0-12-5.4-12-12v-41.9c0-6.6,5.4-12,12-12h93.6c6.6,0,12,5.4,12,12v41.9
+	C321.9,293.7,316.5,299.1,309.9,299.1z"/>
+<text id="XMLID_10_" transform="matrix(1 0 0 1 209.1261 254.5882)"><tspan x="0" y="0" class="st1 st2 st3">Öffentlicher Schlüssel </tspan><tspan x="17.2" y="14.4" class="st1 st2 st3">Ransomeware  </tspan><tspan x="29.9" y="28.8" class="st1 st2 st3">Hersteller</tspan></text>
+<path id="XMLID_11_" class="st6" d="M308.9,201.9h-93.6c-6.6,0-12-5.4-12-12V148c0-6.6,5.4-12,12-12h93.6c6.6,0,12,5.4,12,12v41.9
+	C320.9,196.5,315.5,201.9,308.9,201.9z"/>
+<text id="XMLID_12_" transform="matrix(1 0 0 1 218.6252 154.5884)"><tspan x="0" y="0" class="st1 st2 st3">Privater Schlüssel </tspan><tspan x="6.8" y="14.4" class="st1 st2 st3">Ransomeware  </tspan><tspan x="19.4" y="28.8" class="st1 st2 st3">Hersteller</tspan></text>
+<g id="XMLID_13_">
+	<g id="XMLID_29_">
+		<line id="XMLID_32_" class="st7" x1="204" y1="267" x2="158" y2="267"/>
+		<g id="XMLID_30_">
+			<polygon id="XMLID_31_" class="st8" points="159,260.5 148.6,266.5 159,272.5 			"/>
+		</g>
+	</g>
+</g>
+<text id="XMLID_14_" transform="matrix(1 0 0 1 27.5948 258.1176)"><tspan x="0" y="0" class="st1 st2 st3">Verschlüsselung des  </tspan><tspan x="7.1" y="14.4" class="st1 st2 st3">Sitzungschlüssels  </tspan><tspan x="-13.9" y="28.8" class="st1 st2 st3">mit öffentlichem Schlüssel</tspan></text>
+<g id="XMLID_7_">
+	<g id="XMLID_34_">
+		<line id="XMLID_37_" class="st4" x1="79" y1="202" x2="79" y2="224"/>
+		<g id="XMLID_35_">
+			<polygon id="XMLID_36_" class="st5" points="72.9,222 79.5,233.4 86.1,222 			"/>
+		</g>
+	</g>
+</g>
+</svg>
