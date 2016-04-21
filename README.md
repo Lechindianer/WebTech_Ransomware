@@ -93,6 +93,8 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - http://blog.talosintel.com/2016/04/ransomware.html
 - https://threatpost.com/latest-flash-zero-day-being-used-to-push-ransomware/117248/
 - www.heise.de/newsticker/meldung/Entschluesselungs-Tool-verfuegbar-Webseite-identifiziert-Erpressungs-Trojaner-3173463.html
+- http://www.heise.de/newsticker/meldung/Tool-RansomWhere-soll-Mac-Nutzer-vor-Erpressungstrojanern-schuetzen-3180128.html
+- www.heise.de/newsticker/meldung/l-f-Was-waere-wenn-Batch-Skript-simuliert-Locky-Infektion-3180132.html  
 
 ### Gegenmaßnahmen
 
