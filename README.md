@@ -34,6 +34,8 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - http://www.heise.de/security/artikel/Erpressungs-Trojaner-wie-Locky-aussperren-3120956.html
 - https://blog.malwarebytes.org/intelligence/2016/03/look-into-locky/
 - http://www.heise.de/security/meldung/Krypto-Trojaner-Locky-Batch-Dateien-infizieren-Windows-Tool-verspricht-Schutz-3118188.html
+- www.heise.de/newsticker/meldung/l-f-Was-waere-wenn-Batch-Skript-simuliert-Locky-Infektion-3180132.html
+- www.heise.de/newsticker/meldung/Nuclear-Exploit-Kit-bombardiert-hunderttausende-Rechner-mit-Locky-3181696.html
 
 ### TeslaCrypt
 
@@ -41,6 +43,7 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - http://www.heise.de/security/artikel/TeslaCrypt-2-0-entschluesselt-3094987.html
 - http://www.engadget.com/2016/03/17/teslacrypt-can-no-longer-be-cracked/
 - http://www.heise.de/newsticker/meldung/Erpresser-ruesten-nach-Verschluesselungs-Trojaner-TeslaCrypt-4-0-gesichtet-3145559.html
+- www.heise.de/newsticker/meldung/Krypto-Trojaner-TeslaCrypt-erschwert-Desinfektion-des-Rechners-verschluesselt-weitere-Formate-3180711.html
 
 ### Ransomware - Fälle in der Presse
 
@@ -88,7 +91,6 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - https://threatpost.com/latest-flash-zero-day-being-used-to-push-ransomware/117248/
 - www.heise.de/newsticker/meldung/Entschluesselungs-Tool-verfuegbar-Webseite-identifiziert-Erpressungs-Trojaner-3173463.html
 - http://www.heise.de/newsticker/meldung/Tool-RansomWhere-soll-Mac-Nutzer-vor-Erpressungstrojanern-schuetzen-3180128.html
-- www.heise.de/newsticker/meldung/l-f-Was-waere-wenn-Batch-Skript-simuliert-Locky-Infektion-3180132.html  
 
 ### Gegenmaßnahmen
 
