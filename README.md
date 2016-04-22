@@ -21,12 +21,6 @@
 
 https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 
-## Todo:
-
-- [ ] VM für Wordpress aufsetzen
-- [ ] Windows VM für Randsomware aus Spamordner aufsetzen
-- [x] Latex-Vorlage für Beamer einchecken
-
 ## Links:
 
 ### Evolution von Ransomware:
