@@ -74,6 +74,9 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - https://www.f-secure.com/weblog/archives/00002640.html
 - http://www.techrepublic.com/article/mac-os-x-ransomware-how-keranger-is-a-shadow-of-malware-to-come/
 - http://www.heise.de/newsticker/meldung/Nur-72-Stunden-Erpressungs-Trojaner-Jigsaw-droht-Dateien-zu-loeschen-3172217.html
+- www.heise.de/newsticker/meldung/Erpressungs-Trojaner-CryptXXX-kostenlos-entschluesseln-3189766.html
+- www.heise.de/newsticker/meldung/Dogspectus-Erste-Android-Geraete-im-Vorbeisurfen-mit-Exploit-Kit-verseucht-3190235.html
+- www.heise.de/newsticker/meldung/BSI-Umfrage-Ein-Drittel-der-Unternehmen-ist-von-Erpressungs-Trojanern-betroffen-3189776.html
 
 ### Allgemein
 
