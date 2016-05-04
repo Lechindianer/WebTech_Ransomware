@@ -77,7 +77,8 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - www.heise.de/newsticker/meldung/Erpressungs-Trojaner-CryptXXX-kostenlos-entschluesseln-3189766.html
 - www.heise.de/newsticker/meldung/Dogspectus-Erste-Android-Geraete-im-Vorbeisurfen-mit-Exploit-Kit-verseucht-3190235.html
 - www.heise.de/newsticker/meldung/BSI-Umfrage-Ein-Drittel-der-Unternehmen-ist-von-Erpressungs-Trojanern-betroffen-3189776.html
-
+- https://www.grahamcluley.com/2016/05/decryption-tool-released-ransomware-bizarre-encryption-routine/
+- 
 ### Allgemein
 
 - https://www.microsoft.com/security/portal/mmpc/shared/ransomware.aspx
