@@ -95,7 +95,8 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - https://threatpost.com/latest-flash-zero-day-being-used-to-push-ransomware/117248/
 - www.heise.de/newsticker/meldung/Entschluesselungs-Tool-verfuegbar-Webseite-identifiziert-Erpressungs-Trojaner-3173463.html
 - http://www.heise.de/newsticker/meldung/Tool-RansomWhere-soll-Mac-Nutzer-vor-Erpressungstrojanern-schuetzen-3180128.html
-
+- https://labsblog.f-secure.com/2016/05/06/on-the-monetization-of-crypto-ransomware/
+- 
 ### Gegenmaßnahmen
 
 - https://www.f-secure.com/en/web/labs_global/removing-police-themed-ransomware
