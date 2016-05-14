@@ -96,6 +96,7 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - www.heise.de/newsticker/meldung/Entschluesselungs-Tool-verfuegbar-Webseite-identifiziert-Erpressungs-Trojaner-3173463.html
 - http://www.heise.de/newsticker/meldung/Tool-RansomWhere-soll-Mac-Nutzer-vor-Erpressungstrojanern-schuetzen-3180128.html
 - https://labsblog.f-secure.com/2016/05/06/on-the-monetization-of-crypto-ransomware/
+- http://arstechnica.com/security/2016/04/active-drive-by-attacks-exploit-critical-android-bugs-care-of-hacking-team/
 - 
 ### Gegenmaßnahmen
 
