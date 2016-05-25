@@ -1,129 +1,60 @@
+% Encoding: UTF-8
 
+% General
 
-@article{BSI:Ransomware,
-	author = {{Bundesamt für Sicherheit in der Informationstechnikm}},
-	title = {{Ransomware - Bedrohungslage, Prävention \& Reaktion}},
-	issue_date = {März 2016},
-	month = März,
-	year = {2016},
-	url = {https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Cyber-Sicherheit/Themen/Ransomware.pdf}
+@Misc{malware_pc,
+  title = {Malware Protection Center - Glossary},
+  url = {https://www.microsoft.com/security/portal/mmpc/shared/glossary.aspx}
+}
+
+% TeslaCrypt
+
+@Misc{tesla:entdeckt,
+  url = {http://www.heise.de/newsticker/meldung/Verschluesselungstrojaner-Neue-TeslaCrypt-Version-grassiert-3037099.html}
+}
+@Misc{tesla:geknackt,
+  url = {http://www.heise.de/security/meldung/Verschluesselungs-Trojaner-TeslaCrypt-2-geknackt-Kriminelle-ruesten-nach-3092667.html}
+}
+@Misc{tesla:version3,
+  url =  {http://www.bleepingcomputer.com/news/security/teslacrypt-3-0-released-with-new-encryption-algorithm-and-xxx-file-extensions/}
+}
+@misc{tesla:version3_2,
+  url = {http://www.engadget.com/2016/03/17/teslacrypt-can-no-longer-be-cracked/}
+}
+@misc{tesla:version4,
+  url = {http://www.heise.de/newsticker/meldung/Erpresser-ruesten-nach-Verschluesselungs-Trojaner-TeslaCrypt-4-0-gesichtet-3145559.html}
+}
+
+% AIDS Trojaner
+
+@Misc{aids:securityfocus,
+  author = {{George Smith}},
+  title =  {The Original Anti-Piracy Hack},
+  year =   {2002},
+  url =    {http://www.securityfocus.com/columnists/102}
+}
+@Misc{aids:sophos,
+	author = {{Paul Ducklin}},
+	title = {Ransomware - would you pay up?},
+	year = {2012},
+	url = {https://nakedsecurity.sophos.com/2012/09/25/ransomware-would-you-pay-up/}
+}
+@Misc{aids:young,
+	author={A. Young and Moti Yung},
+	booktitle={Security and Privacy, 1996. Proceedings., 1996 IEEE Symposium on},
+	title={{Cryptovirology: Extortion-Based Security Threats and Countermeasures}},
+	year={1996},
+	pages={129-140},
+	doi={10.1109/SECPRI.1996.502676},
+	ISSN={1081-6011},
+	month={May},
+}
+
+@Misc{aids:evolution,
+    author = {{Kevin Savage, Peter Coogan, Hon Lau}},
+    title = {The evolution of ransomware},
+    year = {2015},
+    url = {https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-evolution-of-ransomware.pdf}
 }
 
 
-@article{Popek:1974:FRV:361011.361073,
- author = {Popek, Gerald J. and Goldberg, Robert P.},
- title = {{Formal Requirements for Virtualizable Third Generation Architectures}},
- journal = {Commun. ACM},
- issue_date = {July 1974},
- volume = {17},
- number = {7},
- month = jul,
- year = {1974},
- issn = {0001-0782},
- pages = {412--421},
- numpages = {10},
- url = {http://doi.acm.org/10.1145/361011.361073},
- doi = {10.1145/361011.361073},
- acmid = {361073},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {abstract model, formal requirements, hypervisor, operating system, proof, sensitive instruction, third generation architecture, virtual machine, virtual machine monitor, virtual memory},
-} 
-
-@article{AMD:SVM,
-	author = {AMD},
-	title = {{Secure Virtual Machine Architecture Reference Manual}},
-	issue_date = {May 2005},
-	month = may,
-	year = {2005},
-	url = {http://www.mimuw.edu.pl/~vincent/lecture6/sources/amd-pacifica-specification.pdf},
-}
-	
-
-@article{HP:PERF,
-	author = {Padala, Pradeep and Zhu Xiaoyun and Singhal Sharad and Shin Kang G.},
-	title = {{Performance Evaluation of Virtualization Technologies for Server Consolidation}},
-	issue_date = {April 2007},
-	month = apr,
-	year = {2007},
-	url = {http://137.204.107.78/tirocinio/site/tirocini/Tirocinio-Zuluaga/Documents/virtualizzazione/Technologies%20for%20Server.pdf},
-}
-
-@article{RING-1,
-	author = {Dornan, Andy},
-	title = {{Intel VT vs. AMD Pacifica}},
-	issue_date = {01 November 2005},
-	url = {http://web.archive.org/web/20130530214041/http://www.informationweek.com/intel-vt-vs-amd-pacifica/172302134},
-}
-
-@article{WP:CPURING,
-	author = {Herzsprung},
-	title = {{Privilege rings for the x86, along with their common uses.}},
-	url = {https://en.wikipedia.org/wiki/File:Priv_rings.svg},
-	journal = {Wikipedia},
-}
-
-@article{Xen:CVE,
-	author = {{CVE-Details}},
-	title = {{CVE-2014-7188}},
-	url = {http://www.cvedetails.com/cve/CVE-2014-7188/},
-}
-
-
-@article{x86_fail,
-	author = {Christopher Domas},
-	title = {{The Memory Sinkhole}},
-	issue_date = {20 July 2015},
-	url = {https://www.blackhat.com/docs/us-15/materials/us-15-Domas-The-Memory-Sinkhole-Unleashing-An-x86-Design-Flaw-Allowing-Universal-Privilege-Escalation-wp.pdf}
-}
-
-@incollection{aes_timing,
-year={2012},
-isbn={978-3-642-32945-6},
-booktitle={Financial Cryptography and Data Security},
-volume={7397},
-series={Lecture Notes in Computer Science},
-editor={Keromytis, AngelosD.},
-doi={10.1007/978-3-642-32946-3_23},
-title={{A Cache Timing Attack on AES in Virtualization Environments}},
-url={http://dx.doi.org/10.1007/978-3-642-32946-3_23},
-publisher={Springer Berlin Heidelberg},
-keywords={Virtualization; Trusted Execution Environment; L4; Microkernel; AES; Cache; Timing; Embedded},
-author={Weiss, Michael and Heinz, Benedikt and Stumpf, Frederic},
-pages={314-328},
-language={English}
-}
-
-@article{aes_bernstein,
-	author = {Daniel J. Bernstein},
-	title = {{Cache-timing attacks on AES}},
-	issue_date = {14 April 2015},
-	url = {http://cr.yp.to/antiforgery/cachetiming-20050414.pdf}
-}
-
-@article{xen_perf,
-	author = {Xen-Wiki},
-	title = {{Tuning Xen for Performance}},
-	url = {http://wiki.xenproject.org/wiki/Tuning_Xen_for_Performance}
-}
-
-
-
-@article{bluepill_blog,
-	author = {Joanna Rutkowska},
-	title = {{Introducing Blue Pill}},
-	issue_date = {22 June 2006},
-	url = {http://theinvisiblethings.blogspot.de/2006/06/introducing-blue-pill.html}
-}
-@article{bluepill_pres,
-	author = {Joanna Rutkowska},
-	title = {{Subverting Vista Kernel for Fun And Profit}},
-	issue_date = {03 August 2006},
-	url = {http://blackhat.com/presentations/bh-usa-06/BH-US-06-Rutkowska.pdf}
-}
-
-@article{wikimedia,
-	author = {{Wikimedia Foundation}},
-	title = {{}},
-	url = {http://ganglia.wikimedia.org/latest/}
-}
