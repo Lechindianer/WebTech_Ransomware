@@ -37,4 +37,5 @@
 *.vrb
 *.xdy
 *.tdo
-
+.paper.tex.swp
+*.tex.swp
