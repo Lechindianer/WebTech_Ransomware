@@ -44,6 +44,7 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - http://www.engadget.com/2016/03/17/teslacrypt-can-no-longer-be-cracked/
 - http://www.heise.de/newsticker/meldung/Erpresser-ruesten-nach-Verschluesselungs-Trojaner-TeslaCrypt-4-0-gesichtet-3145559.html
 - www.heise.de/newsticker/meldung/Krypto-Trojaner-TeslaCrypt-erschwert-Desinfektion-des-Rechners-verschluesselt-weitere-Formate-3180711.html
+- http://www.bleepingcomputer.com/news/security/teslacrypt-shuts-down-and-releases-master-decryption-key/
 
 ### Ransomware - Fälle in der Presse
 
@@ -100,7 +101,8 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - http://www.heise.de/newsticker/meldung/Tool-RansomWhere-soll-Mac-Nutzer-vor-Erpressungstrojanern-schuetzen-3180128.html
 - https://labsblog.f-secure.com/2016/05/06/on-the-monetization-of-crypto-ransomware/
 - http://arstechnica.com/security/2016/04/active-drive-by-attacks-exploit-critical-android-bugs-care-of-hacking-team/
-- 
+- https://www.judiciary.senate.gov/imo/media/doc/05-18-16%20Hucks%20Testimony.pdf
+
 ### Gegenmaßnahmen
 
 - https://www.f-secure.com/en/web/labs_global/removing-police-themed-ransomware
