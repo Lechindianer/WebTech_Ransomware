@@ -81,7 +81,8 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - https://www.grahamcluley.com/2016/05/decryption-tool-released-ransomware-bizarre-encryption-routine/
 - www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Jigsaw-mutiert-zu-CryptoHitman-und-ist-geknackt-3208807.html
 - http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Entschluesselungs-Tool-scheitert-an-neuer-CryptXXX-Version-3205410.html
-- 
+- http://www.heise.de/newsticker/meldung/Neben-Erpressung-nun-auch-DDoS-Verschluesselungs-Trojaner-Cerber-lernt-dazu-3217254.html
+- http://www.heise.de/newsticker/meldung/Dateiendung-zcrypt-Microsoft-warnt-vor-wurmartigem-Erpressungstrojaner-3221201.html
 
 ### Allgemein
 
