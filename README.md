@@ -36,6 +36,7 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - http://www.heise.de/security/meldung/Krypto-Trojaner-Locky-Batch-Dateien-infizieren-Windows-Tool-verspricht-Schutz-3118188.html
 - www.heise.de/newsticker/meldung/l-f-Was-waere-wenn-Batch-Skript-simuliert-Locky-Infektion-3180132.html
 - www.heise.de/newsticker/meldung/Nuclear-Exploit-Kit-bombardiert-hunderttausende-Rechner-mit-Locky-3181696.html
+- http://www.heise.de/security/meldung/Locky-und-Dridex-Der-Fall-des-verschwundenen-Botnetzes-3234961.html
 
 ### TeslaCrypt
 
