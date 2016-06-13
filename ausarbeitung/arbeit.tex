@@ -4,7 +4,7 @@ Wir beschreiben den in den letzten Jahren bekannt gewordenen Malware-Typ der Ran
 
 \section{Einleitung}
 \label{sec:einleitung}
-	In den letzten Jahren haben sich die bekannt gewordenen Fälle von Ransomware vervielfacht. Waren früher noch irreführende Apps der Hauptanteil der Malware, wurde 2012 mit den sogenannten Lockern erstmals Malware entdeckt, die großflächig die betroffenen Anwender zur Bezahlung einer Lösegeldsumme veranlasst hat. In den Jahren 2014 und 2015 wurden diese eher harmlosen Varianten, die nur die Benutzung des Geräts blockiert haben, durch die Cryptoransomware abgelöst. Diese verschlüsselt die Dateien des Benutzers und fordert zum Wiedererhalt eine Lösegeldsumme, die nicht-verfolgbar bezahlt werden soll.
+	In den letzten Jahren haben sich die bekannt gewordenen Fälle von Ransomware vervielfacht. Waren früher noch irreführende Apps der Hauptanteil der Malware, wurde 2012 mit den sogenannten Lockern erstmals Malware entdeckt, die großflächig die betroffenen Anwender zur Bezahlung einer Lösegeldsumme veranlasst hat. In den Jahren 2014 und 2015 wurden diese eher harmlosen Varianten, die nur die Benutzung des Geräts blockiert haben, durch die Crypto-Ransomware abgelöst. Diese verschlüsselt die Dateien des Benutzers und fordert zum Wiedererhalt eine Lösegeldsumme, die nicht-verfolgbar bezahlt werden soll.
 
 	\begin{figure}[h!]
 		\centering
@@ -15,11 +15,11 @@ Wir beschreiben den in den letzten Jahren bekannt gewordenen Malware-Typ der Ran
 
 \section{Definition Schadsoftware}
 \label{sec:definition}
-		Aufgrund der teilweise überschneidenen Funktionen im Bereich der Malware ist es schwierig eine allgemeingültige Definition für diese zu finden, im Rahmen dieser Arbeit soll sich jedoch an die Definitionen des Microsoft Protection Centers \cite{malware_pc} gehalten werden.
+		Aufgrund der teilweise überschneidenden Funktionen im Bereich der Malware ist es schwierig eine allgemeingültige Definition für diese zu finden, im Rahmen dieser Arbeit soll sich jedoch an die Definitionen des Microsoft Protection Centers \cite{malware_pc} gehalten werden.
 
 		\begin{itemize}
-			\item \textbf{Bot:} Ein kleines, versteckes Programm auf dem Rechner des Benutzers, oftmals vom Angreifer kontrolliert. Mehrere Bots, die über das Netzwerk verbunden sind, nennt man ein Netzwerk.
-			\item \textbf{Botnetz:} Mehrere Kopien des­sel­ben Bots sind auf mehreren Rechnern installiert und werden von einem böswilligen Hacker kontrolliert. Mehrere Bots auf einer großen Anzahl infizierter Rechner nennt man Botnetz.
+			\item \textbf{Bot:} Ein kleines, verstecktes Programm auf dem Rechner des Benutzers, oftmals vom Angreifer kontrolliert. Mehrere Bots, die über das Netzwerk verbunden sind, nennt man ein Netzwerk.
+			\item \textbf{Botnetz:} Mehrere Kopien desselben Bots sind auf mehreren Rechnern installiert und werden von einem böswilligen Hacker kontrolliert. Mehrere Bots auf einer großen Anzahl infizierter Rechner nennt man Botnetz.
 			\item \textbf{Malware:}	Kurzform für ``malicious software''. Überbegriff für Software, die ungewollte Aktivitäten auf einem Rechner durchführt, wie etwa Daten stehlen, Dateien verschlüsseln oder Spam verschickt.
 			\item \textbf{Ransomware:} Eine Art Malware, die den Benutzer daran hindert das Gerät zu benutzen oder die Dateien verschlüsselt. Der Benutzer wird darüber informiert, dass er Geld bezahlen, eine Befragung durchführen oder eine sonstige Aktion durchführen muss, bevor er die Kontrolle wiedererlangt.
 			\item \textbf{Trojaner:} Nach dem Trojanischen Pferd aus der Sage benannt, verhält sich diese Art von Malware unauffällig, um nicht entdeckt zu werden. Im Gegensatz zu Würmern oder Viren verbreitet sich ein Trojaner nicht von selbst weiter, sondern täuscht den Benutzer, um von diesem heruntergeladen oder installiert zu werden.
@@ -96,7 +96,7 @@ Die symmetrische Verschlüsselung folgt dem Konzept, das sowohl für die Ver- al
 Es gibt eine Reihe an unterschiedlichsten Algorithmen und Verfahren für symmetrische Verschlüsselung, allerdings hat sich mit \textsc{AES} ein Verfahren als de-facto Standard für verschiedenste Anwendungsbereiche etabliert.
 
 AES ist hierbei eine Abkürzung für Advanced Encryption Standard und wird meist synonym für den Rijndael-Algorithmus verwendet. Dieses Verfahren ist heute so verbreitet, dass beispielsweise in modernen Prozessoren direkt als Maschinenbefehl zur Verfügung steht und somit deutlich größere Datenraten verarbeiten kann. \\
-Benchmarks zeigen hier beispielshaft einen 6-fachen Speedup mit einer Datenrate von ca. 1.35 GB/s mit CPU-Unterstützung verglichen mit 212 MB/s ohne
+Benchmarks zeigen hier beispielhaft einen 6-fachen Speedup mit einer Datenrate von ca. 1.35 GB/s mit CPU-Unterstützung verglichen mit 212 MB/s ohne
 CPU-Unterstützung.\footcite{aes:benchmark}
 
 Vor allem durch die Hardware-Unterstützung ist es moderner Ransomware möglich, die CPU-Last während der Verschlüsselung derart in Grenzen zu halten, dass der Nutzer keine spürbare Langsamkeit des Systems bemerkt.
