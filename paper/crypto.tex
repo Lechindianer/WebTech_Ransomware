@@ -53,15 +53,15 @@ Hinsichtlich ihrer Verwendung und Sicherheit im Umfeld von Ransomware sind sich 
 Auf Grund der Komplexität der Berechnungen ist \texttt{RSA} im Vergleich zu \texttt{AES} langsam \cite{crypto:aes_rsa_benchmark}. Deshalb wird es nur für verhältnismäßig kurze Klartexte eingesetzt (< 1 KB), auch da die maximale Länge des Klartexts von der Länge des verwendeten Schlüssels abhängt. %TODO: Nachweis
 \\
 
-Der große Vorteil von asymmetrischer Verschlüsselung liegt im sicheren Schlüsselaustausch, der nicht auf einen bereits gesicherten Kanal angewiesen ist, sondern auch über ein unsicheres Medium, beispielsweise über das Internet erfolgen kann, ohne dass es für einen Angreifer möglich ist die beteiligten Schlüssel zu belauschen oder zu berechnen. %TODO: MitM
-
-
-
+Der große Vorteil von asymmetrischer Verschlüsselung liegt im sicheren Schlüsselaustausch, der nicht auf einen bereits gesicherten Kanal angewiesen ist, sondern auch über ein unsicheres Medium, beispielsweise über das Internet erfolgen kann, ohne dass es für einen Angreifer möglich ist die beteiligten Schlüssel zu belauschen oder zu berechnen. \\
+Auch hier gibt es allerdings Angriffsvektoren, beispielsweise ein Man-in-the-Middle-Angriff, bei dem sich ein 
 
 \subsection{Hybride Verschlüsselung}
 \label{sec:hybride_verschl}
 
-Hybride Verschlüsselung kombiniert alle Vorteile von symmetrischer Verschlüsselung (Geschwindigkeit, Einfachheit) mit allen Vorteilen von asymmetrischer Verschlüsselung (Schlüsseltausch, Sicherheit).
+Hybride Verschlüsselung kombiniert die Vorteile von symmetrischer Verschlüsselung (Geschwindigkeit, Einfachheit) mit den Vorteilen von asymmetrischer Verschlüsselung (Schlüsseltausch, Sicherheit). \\
 Hierfür werden zufällige Schlüssel erzeugt, meist lange Zufallszahlen, die für die symmetrische Verschlüsselung verwendet werden. Diese Schlüssel werden Sitzungsschlüssel genannt und werden in der Regel nur einmalig verwendet (ein sog. One-Time-Pad). Nach der Verwendung werden die Sitzungsschlüssel asymmetrisch verschlüsselt und mit den codierten Daten zusammen übertragen.
 
 Auf diese Weise lassen sich auch große Mengen an Daten effizient mittels asymmetrischer Kryptographie übertragen.
+
+Mit Blick auf Ransomware bietet hybride Verschlüsselung die Möglichkeit ein Schlüsselpaar zu erzeugen und nur den öffentlichen Schlüssel für die Verschlüsselung der sym. Schlüssel auf dem Computer des Opfers zu belassen. Die sym. Schlüssel können dann zufällig erzeugt werden und verschlüsselt zusammen mit den Dateien gespeichert werden. \\ Bezahlt das Opfer die geforderte Summe, so wird im der private Schlüssel mitgeteilt, sodass eine Decodierung aller Dateien möglich ist.
