@@ -1,25 +1,52 @@
 \subsection{Aktuelle Patchlevel}
-	 Grundsätzlich sollte, um die allgemeine Sicherheit eines Systems zu verbessern, immer jegliche Software, sowohl des Betriebssystem wie auch die verwendete Anwendungssoftware, auf den aktuellen Stand gehalten werden. Ein besonders großes Risiko besteht bei Software, die zum öffnen von Inhalten aus den Internet verwendet werden, wie z.B. Web-Browser, Browser-Plugins, E-Mail-Programme, PDF-Betrachter und Büroanwendungen. \cite{bsi:ransome}[Seite 11, 4.1.1 Patches]\\
+
+	 Grundsätzlich sollte, um die allgemeine Sicherheit eines Systems zu verbessern, immer jegliche Software, sowohl des Betriebssystem wie auch die verwendete Anwendungssoftware, auf den aktuellen Stand gehalten werden. Ein besonders großes Risiko besteht bei Software, die zum öffnen von Inhalten aus den Internet verwendet werden, wie z.B. Web-Browser, Browser-Plugins, E-Mail-Programme, PDF-Betrachter und Büroanwendungen\cite{bsi:ransome}.\\
 	 
-	 Dies gilt in besonderem Maße für Systeme auf denen Windows betrieben wird, da diese für die Erpresser die größte Verbreitung ermöglichen, was einfach der großen Verbreitung des Betriebssystems zuzuschreiben ist. Dies soll keinesfalls bedeuten, dass alternative Systeme weniger gefährdet sind, allerdings das Risiko bei Windows basierten Systemen erhöht sein könnte.
+	 Dies gilt in besonderem Maße für Systeme auf denen Windows betrieben wird, da diese für die Erpresser die größte Verbreitung ermöglichen, was der großen Verbreitung des Betriebssystems zuzuschreiben ist. Dies soll keinesfalls bedeuten, dass alternative Systeme weniger gefährdet sind, allerdings das Risiko bei Windows basierten Systemen erhöht sein könnte.
+	 
 \subsection{Angriffsfläche minimieren}
+
 	Zudem kann die Angriffsfläche reduziert werden, indem nicht benötigt Software deinstalliert wird, wodurch auf die Anzahl der Software, die auf dem neuesten Stand gehalten werden muss sich verringert.\\
 	
-	Des Weiten ist kann das Systemweite deaktivieren der Script-Ausführung, wenn dies möglich ist das Risiko deutlich minderen, da Ransomeware teilweise über E-Mail-Anhänge in Form von Javascript und VisualBasic-Skripten verteilt wird. Somit kann der Anhang nicht auf dem System ausgeführt werden und eine Infektion wird verhindert. \cite{bsi:ransome}[Seite 11, 4.1.2 Angriffsfläche minimieren]\\
+	Des Weiten ist kann das Systemweite deaktivieren der Script-Ausführung, wenn dies möglich ist das Risiko deutlich minderen, da Ransomware teilweise über E-Mail-Anhänge in Form von Javascript und VisualBasic-Skripten verteilt wird. Somit kann der Anhang nicht auf dem System ausgeführt werden und eine Infektion wird verhindert\cite{bsi:ransome}.\\
 	
-	Zudem ist es sinnvoll, wenn nicht benötigte Browser-Plugins deinstalliert werden (z.B. Flash, Java, Silverlight)\cite{bsi:ransome}[Seite 11, 4.1.2 Angriffsfläche minimieren]\\, da diese bekanntermaßen häufig über Sicherheitslücken verfügen, was allein schon an den häufigen Sicherheits-Pachtes festgemacht werden kann.  
+	Zudem ist es sinnvoll, wenn nicht benötigte Browser-Plugins deinstalliert werden (z.B. Flash, Java, Silverlight)\cite{bsi:ransome}\\, da diese bekanntermaßen häufig über Sicherheitslücken verfügen, was allein schon an den häufigen Sicherheits-Pachtes festgemacht werden kann.  
+	
 \subsection{Makros deaktivieren}
+
 	Makros in z.B Excel können grundsätzlich ein Sicherheitsrisiko darstellen. Ransomeware kann sich z.B. unscheinbar wirkenden Excel, oder ähnlichen Dateien, als Makro verstecken. Bei aktuellen Office-Produkten ist das automatische ausführen von Makros zwar deaktiviert, in älteren allerdings nicht. Bei solch älterer Software ist es zudem häufig, dass diese nicht mehr mit Sicherheits-Updates versorgt werden, somit ist von der Verwendung sowieso abzuraten. 
+	
 \subsection{Text-Mail erzwingen}
-	Dem BSI zufolge ist ist eine eine gute Idee, die HTML-Darstellung von E-Mails zu deaktivieren. Dies kann hilfreich sein, da für die Darstellung solcher E-Mails die selben Mechanismen benötigt werden, wie sie in Webbrowsern nötig sind. Dies bringt weiter Komplexität in die E-Mail Software und somit potentiell weitere Sicherheitslücken. Die können natürlich nicht ausgenutzt werden, wenn man entsprechende Komponente nicht nutzt. Zudem sollte man das automatische ausführen von Anhängen beim anklicken verhindern.\cite{bsi:ransome}[Seite 11, 4.1.3 Behandlung von E-Mails]
+
+	Dem BSI zufolge ist ist eine eine gute Idee, die HTML-Darstellung von E-Mails zu deaktivieren. Dies kann hilfreich sein, da für die Darstellung solcher E-Mails die selben Mechanismen benötigt werden, wie sie in Webbrowsern nötig sind. Dies bringt weiter Komplexität in die E-Mail Software und somit potentiell weitere Sicherheitslücken. Die können natürlich nicht ausgenutzt werden, wenn man entsprechende Komponente nicht nutzt. Zudem sollte man das automatische ausführen von Anhängen beim Anklicken verhindern\cite{bsi:ransome}.
+	
+	
+\subsection{Greylisting / Tarpitting}
+	
+	Um einer Infektion durch Mail zuvorzukommen, hilft es den Angriffsvektor durch Empfang von Spam-Mails generell zu unterbinden. Die Erfahrungen der letzten Jahre haben gezeigt, dass Blacklisting generell eine schlechte Idee ist. Manche Blacklist-Dienste sperren gleich komplette Netzbereiche eines ISPs, wenn aus dessen IP-Adress-Bereich Spam verschickt wird. Greylisting ist eine 2003 erfundene Methode, die einen alternativen Ansatz bietet: Der empfangende Mail-Server schickt dem potenziellen Spammer eine Nachricht, dass der Service zurzeit überlastet ist und der Sender sich zu einem späteren Zeitpunkt nochmals melden soll. Dieses standardkonforme Verhalten aber wird von Spammern nicht implementiert und so melden sich nur reguläre Mail-Server nach einer Zeit wieder\cite{greylisting}. \\
+	Einen Schritt weiter geht ``Tarpitting'', bei dem ähnlich wie bei der namensgebenden Teergrube die Geschwindigkeit verlangsamt wird. Der Spammer möchte soviel Mails wie möglich in kurzer Zeit versenden. Greylisting verjagt die Spammer zwar, aber lässt diese noch ungehindert ihr Werk tun. Die Tarpit reguliert den Mailempfang auf eine möglichst geringe Geschwindigkeit herunter, um so den Spammer möglichst lange im Sendezustand zu lassen. Solang diese Verbindung offen ist, wird er keine weitere öffnen. So wird beim Spammer eine Last erzeugt und dieser am massenhaften Versenden weiterer Mails gehindert.
+	
 \subsection{Serverseitige Mailfilter}
+
 	
 \subsection{Netzlaufwerke sichern}
 \subsection{Netzwerke segmentieren}
 \subsection{Zugänge sichern}
-\subsection{Aktueller Vierenschutz}
+\subsection{Aktueller Virenschutz}
+
+	Wie bereits beschrieben, benötigen die Antiviren-Hersteller circa 12 Stunden vom Zeitpunkt der Erkennung einer neuen Malware bis zum fertigen Update für ihre Softwarelösung. Um gegen eine Infizierung durch Ransomware gewappnet zu sein, ist es also anzuraten, möglichst täglich auf notwendige Updates hin zu überprüfen. Dies ist in nahezu allen Antiviren-Lösungen auch automatisch einstellbar.
+
 \subsection{Nutzerschulung}
+
+	Technische Lösungen sind immer nur ein Mittel zur Schadensbegrenzung, aber nie eine völlige Sicherheit vor Malware. Wie bereits dargelegt versucht Malware sich durch gefälsche E-Mails zu verbreiten, die dem Benutzer suggerieren, dass in einer angehängten Datei für ihn wichtiger Inhalt wäre. Zum Schutz vor Malware sollte hier den Benutzern eingeimpft werden, dass sie nur Anhänge von ihnen bekannten Personen öffnen. Nutzerschulungen sind leider kostspielig und müssen in regelmäßigen Abständen wiederholt werden, was der Grund ist, dass dies meist nicht stattfindet.
+
+
 \subsection{Backups / Datensicherungen}
+
+	Falls trotz aller getätigter Anstrengungen doch eine Infizierung erfolgte, ist es notwendig aktuelle Backups vorhanden zu haben. Diese sollten in regelmäßigen Abständen und automatisch erfolgen, da sie sonst erfahrungsgemäß irgendwann nicht mehr durchgeführt werden. Da Ransomware meist auch versucht auf Netzlaufwerke zuzugreifen, ist es wichtig, dass die Backups auf einem WORM-Medium (Write Once Read Many, etwa Bandspeicher) gespeichert werden. So kann verhindert werden, dass die Ransomware auch die Backups verschlüsselt.\\
+	Ansonsten gilt wie üblich, dass Backups getestet werden müssen, um ihre Konsistenz und Wiederherstellbarkeit zu demonstrieren.
+	
 \subsection{Malwarebytes Anti-Ransomware}
-Das Computermagazin ``heise'' rät zur Installation der Software Anti-Ransomware der Firma Malwarebytes. Diese erkennt, falls ein Prozess massenhaft Dateien umbenennt und blockiert dessen weitere Ausführung\cite{malwarebytes}.
+
+	Das Computermagazin ``heise'' rät zur Installation der Software ``Anti-Ransomware'' der Firma Malwarebytes. Diese untersucht die laufenden Prozesse auf die typischen Merkmale von Ransomware, sprich es werden innerhalb kürzester Zeit Dateien verschlüsselt und mit einem neuen Namen versehen, der aus ursprünglichem Dateinamen und Ransomware-spezifischem Suffix besteht. Falls nun ein Prozess massenhaft Dateien umbenennen möchte, wird dies von ``Anti-Ransomware'' erkannt und dessen weitere Ausführung blockiert\cite{malwarebytes}.
 
