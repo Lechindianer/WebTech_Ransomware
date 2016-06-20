@@ -84,6 +84,7 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Entschluesselungs-Tool-scheitert-an-neuer-CryptXXX-Version-3205410.html
 - http://www.heise.de/newsticker/meldung/Neben-Erpressung-nun-auch-DDoS-Verschluesselungs-Trojaner-Cerber-lernt-dazu-3217254.html
 - http://www.heise.de/newsticker/meldung/Dateiendung-zcrypt-Microsoft-warnt-vor-wurmartigem-Erpressungstrojaner-3221201.html
+- http://www.scmagazine.com/new-raa-ransomware-written-in-javascript-discovered/article/504029/
 
 ### Allgemein
 
