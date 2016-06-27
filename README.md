@@ -37,7 +37,8 @@ https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
 - www.heise.de/newsticker/meldung/l-f-Was-waere-wenn-Batch-Skript-simuliert-Locky-Infektion-3180132.html
 - www.heise.de/newsticker/meldung/Nuclear-Exploit-Kit-bombardiert-hunderttausende-Rechner-mit-Locky-3181696.html
 - http://www.heise.de/security/meldung/Locky-und-Dridex-Der-Fall-des-verschwundenen-Botnetzes-3234961.html
-
+- http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Neue-Locky-Welle-infiziert-Computer-3248277.html
+ 
 ### TeslaCrypt
 
 - http://blog.talosintel.com/2016/03/teslacrypt-301-tales-from-crypto.html
