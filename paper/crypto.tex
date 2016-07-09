@@ -48,13 +48,10 @@ Soll ein Klartext verschlüsselt werden, so wird hierfür der öffentliche Schl�
 Es existieren mehrere genaue Verfahren für asymmetrische Verschlüsselung. Die Bekanntesten sind hier das \texttt{RSA}-Verfahren und das \texttt{Elgamal}-Verfahren.\\
 Beide Verfahren unterscheiden sich zwar mathematisch stark voneinander, da \texttt{RSA} auf dem Problem der Primfaktorzerlegung basiert, während sich \texttt{Elgamal} auf die Schwierigkeit des diskreten Logarithmus stützt. \\
 Hinsichtlich ihrer Verwendung und Sicherheit im Umfeld von Ransomware sind sich beide Verfahren ebenbürtig, weshalb im weiteren nur das \texttt{RSA}-Verfahren behandelt wird.
-\\
 
-Auf Grund der Komplexität der Berechnungen ist \texttt{RSA} im Vergleich zu \texttt{AES} langsam \cite{crypto:aes_rsa_benchmark}. Deshalb wird es nur für verhältnismäßig kurze Klartexte eingesetzt (< 1 KB), auch da die maximale Länge des Klartexts von der Länge des verwendeten Schlüssels abhängt. %TODO: Nachweis
-\\
+Auf Grund der Komplexität der Berechnungen ist \texttt{RSA} im Vergleich zu \texttt{AES} langsam \cite{crypto:aes_rsa_benchmark}. Deshalb wird es nur für verhältnismäßig kurze Klartexte eingesetzt (< 1 KB), auch da die maximale Länge des Klartexts von der Länge des verwendeten Schlüssels abhängt. \cite{rsa}
 
-Der große Vorteil von asymmetrischer Verschlüsselung liegt im sicheren Schlüsselaustausch, der nicht auf einen bereits gesicherten Kanal angewiesen ist, sondern auch über ein unsicheres Medium, beispielsweise über das Internet erfolgen kann, ohne dass es für einen Angreifer möglich ist die beteiligten Schlüssel zu belauschen oder zu berechnen. \\
-Auch hier gibt es allerdings Angriffsvektoren, beispielsweise ein Man-in-the-Middle-Angriff, bei dem sich ein 
+Der große Vorteil von asymmetrischer Verschlüsselung liegt im sicheren Schlüsselaustausch, der nicht auf einen bereits gesicherten Kanal angewiesen ist, sondern auch über ein unsicheres Medium, beispielsweise über das Internet erfolgen kann, ohne dass es für einen Angreifer möglich ist die beteiligten Schlüssel zu belauschen oder zu berechnen.
 
 \subsection{Hybride Verschlüsselung}
 \label{sec:hybride_verschl}
