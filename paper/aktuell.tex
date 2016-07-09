@@ -16,13 +16,23 @@ Die erste Welle des Angriffs wurde koordiniert zum gleichen Zeitpunkt gestartet,
 
 Die Infizierung der Rechner erfolgte anfangs mit einem Microsoft Office-Dokument, in dem Makros enthalten waren \cite{locky:infection}. Das Dokument selbst war unleserlich, ähnlich einer fehlerhaften Zeichensatz-Decodierung. Am Anfang des Dokuments stand der Hinweis, dass falls das Dokument unleserlich sei, der Nutzer die Verwendung von Makros einschalten sollte. Hierdurch wurde schließlich die Infizierung ermöglicht.
 
-Kurze Zeit später wurde bekannt, dass die Infizierung auch auf weiteren Wegen erfolgt: Als Erstes wurde per angeblichem Fax von einem Fax-zu-E-Mail-Gateway eine Verbreitung erreicht \cite{locky:fax}, gefolgt von Windows-Batch-Dateien \cite{locky:batch}. Die verschiedenen Verbreitungskanäle der Ransomware machen es Antiviren-Hersteller schwer, ihren Kunden geeignete, schnelle Hilfe zu bieten. Von der Entdeckung einer neuen Malware bis zur Möglichkeit, diese auf dem System des Kundens zu erkennen, vergehen immer einige Stunden.\dcn
+Kurze Zeit später wurde bekannt, dass die Infizierung auch auf weiteren Wegen erfolgt: Als Erstes wurde per angeblichem Fax von einem Fax-zu-E-Mail-Gateway eine Verbreitung erreicht \cite{locky:fax}, gefolgt von Windows-Batch-Dateien \cite{locky:batch}. Die verschiedenen Verbreitungskanäle der Ransomware und deren Fähigkeit durch die Verwendung von Skriptsprachen (Batch, Windows Script Host) mit der Möglichkeit, den Quelltext maschinell und leicht abzuändern und zu verschleiern, machen es Antiviren-Herstellern schwer, ihren Kunden geeignete, schnelle Hilfe zu bieten. Von der Entdeckung einer neuen Malware bis zur Möglichkeit, diese auf dem System des Kundens zu erkennen, vergehen immer einige Stunden.\dcn
 
 Anfang Juni 2016 ist das Botnetz ``Necurs'', das unter anderem für die Verteilung von Locky zuständig war, auf einmal spurlos verschwunden. \cite{locky:end}
 
 		
 \subsection{Petya}
-Auf eine andere Möglichkeit, den Nutzer zur Bezahlung einer Lösegeldsumme zu bringen, ist die Malware ``Petya'' im März 2016 gekommen: Anstatt einzelne Dateien zu infizieren, die einen hohen ideellen Wert für den Anwender haben, verschlüsselt es gleich den gesamten MBR des Rechners und blockiert somit jegliche Nutzung des Rechners\cite{petya:start}.\\
-Eine Verbreitung erfolgt gezielt auf deutsche Nutzer: In E-Mails, die angeblich für einen Job Bewerbungsunterlagen enthalten, ist ein Link enthalten, die auf eine Datei hinweisen, die auf dem Speicherdienst Dropbox gehostet wird. Im Gegensatz zu vergleichbaren Spam-Mails, die meist in krudem Deutsch verfasst sind, sind Grammatik und Rechtschreibung im Falle von Petya allerdings einwandfrei.\\
-Die Verschlüsselung des Systems erfolgt in zwei Phasen\cite{petya:stop}: In der ersten wird der MBR verschlüsselt, so dass ein Boot der Betriebssysteme nicht mehr möglich ist. In diesem Stadium kann der Nutzer die infizierte Festplatte noch extern einbinden und die Daten retten. Im zweiten Schritt wird dann eine Fehlermeldung erzeugt, die den Rechner zum Neustart zwingt. Beim Neustart des Rechners wird ein gefälschtes ``chkdsk'' vorgeschoben, dass anstatt kaputte Sektoren auf der Festplatte jedoch diese komplett verschlüsselt.\\
-Bereits einen Monat nach Entdeckung der Ransomware hat ein unbekannter Sicherheitsforscher eine Software veröffentlicht, mit der die Entschlüsselung betroffener Systeme möglich ist\cite{petya:end}.
+Eine andere Möglichkeit, den Nutzer von der Notwendigkeit der Bezahlung einer Lösegeldsumme zu überzeugen, nutzt die Malware ``Petya'' (März 2016): Anstatt einzelne Dateien zu verschlüsseln, die einen vermuteten, hohen ideellen Wert für den Anwender haben, installiert sie sich im Master Boot Record (MBR) des Rechners und verschlüsselt nach einem erzwungenen Neustart, unter Darstellung einer traditionellen CHKDSK-Ausgabe, die Master File Table (MFT). Ohne die MFT ist das Dateisystem nicht in der Lage, Dateien auf der Festplatte zu finden und auszugeben. \cite{petya:start} \\
+Somit werden zwar nicht die Daten selber, aber der innere Zusammenhang zwischen den einzelnen Datenblöcken, zerstört und somit unleserlich gemacht. Eine Nutzung oder gar ein Starten des Computers wird somit gezielt unmöglich gemacht.
+
+Eine Verbreitung erfolgte gezielt auf deutsche Nutzer, hauptsächlich auf Personalabteilungen von Firmen: In E-Mails, die angeblich für einen Job Bewerbungsunterlagen enthalten, ist ein Link enthalten, die auf eine Datei namens "`Bewerbungsmappe-gepackt.exe"' verweist, die auf dem Speicherdienst Dropbox gehostet wird. \cite{petya:infect} \\
+Im Gegensatz zu vergleichbaren Spam-Mails, die meist in krudem Deutsch verfasst sind, sind Grammatik und Rechtschreibung im Falle von Petya allerdings einwandfrei.
+
+Bereits einen Monat nach Entdeckung der Ransomware hat ein unbekannter Sicherheitsforscher eine Software veröffentlicht, mit der die Entschlüsselung betroffener Systeme möglich ist. \cite{petya:end}
+
+
+
+
+
+
+
