@@ -96,6 +96,9 @@ qt=false%
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
+
+\def\dcn{\colorbox{yellow}{$^{\texttt{Zitat benötigt}}$}~}
+
 \begin{document}
 
 %Works on MiKTeX only
@@ -112,7 +115,7 @@ qt=false%
 %Single insitute
 \author{Abwandner, Sebastian und Beham, Michael und Schmid, Pascal}
 %If there are too many authors, use \authorrunning
-%\authorrunning{First Author et al.}
+\authorrunning{HSA - Abwandner, Beham, Schmid}
 \institute{
 	Hochschule Augsburg \\
 	An der Hochschule 1 \\
@@ -123,12 +126,12 @@ qt=false%
 \maketitle
 
 \begin{abstract}
-Die letzten Jahre haben gezeigt, dass Ransomware für die IT-Sicherheit zum immer größer werdenden Problem wird. Obwohl schon vor Jahrzehnten die erste Ransomware entdeckt wurde, so ist es durch anonyme Zahlungsmethoden des Internets für Angreifer einfacher geworden Geld mit Malware zu verdienen. Diese Arbeit gibt einen Überblick über die Entwicklungen der letzten Jahre, die Ransomware im großen Stil möglich gemacht haben, über die technische Funktionsweise, psychologische Hintergründe und mögliche Gegenmaßnahmen. Zum Schluss soll ein Ausblick in die Zukunft nochmals deutlich werden lassen, welche Gefahr von Ransomware uns in den nächsten Jahren erwartet.
+Die letzten Jahre haben gezeigt, dass Ransomware nicht nur für die IT-Sicherheit zum immer größer werdenden Problem wird. Obwohl schon vor Jahrzehnten die erste Ransomware entdeckt wurde, ist es durch anonyme Zahlungsmethoden des Internets für Angreifer einfacher geworden Geld mit Malware zu verdienen. Diese Arbeit gibt einen Überblick über die Entwicklungen der letzten Jahre, die Ransomware-Angriffe im großen Stil möglich machten, über die technische Funktionsweise, psychologische Hintergründe und mögliche Gegenmaßnahmen. Zum Schluss lässt ein Ausblick in die Zukunft nochmals deutlich werden, welche Gefahren von Ransomware in den nächsten Jahren ausgehen.
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Einleitung}\label{sec:intro}
-In den letzten Jahren haben sich die bekannt gewordenen Fälle von Ransomware vervielfacht. Waren früher noch irreführende Apps der Hauptanteil der Malware, wurde 2012 mit den sogenannten Lockern erstmals Malware entdeckt, die großflächig die betroffenen Anwender zur Bezahlung einer Lösegeldsumme veranlasst hat. In den Jahren 2014 und 2015 wurden diese eher harmlosen Varianten, die nur die Benutzung des Geräts blockiert haben, durch die Crypto-Ransomware abgelöst. Diese verschlüsselt die Dateien des Benutzers und fordert zum Wiedererhalt eine Lösegeldsumme, die nicht-verfolgbar bezahlt werden soll. Schätzungen zufolge erbeuten die Hersteller von Crypto-Ransomware somit 100.000.000 Euro pro Jahr\cite{money}.
+In den letzten Jahren haben sich die bekannt gewordenen Fälle von Ransomware vervielfacht.\dcn Waren früher noch irreführende Apps der Hauptanteil der Malware, wurde 2012 mit den sogenannten Lockern erstmals Malware entdeckt, die großflächig die betroffenen Anwender zur Bezahlung einer Lösegeldsumme veranlasst hat.\dcn In den Jahren 2014 und 2015 wurden diese eher harmlosen Varianten, die nur die Benutzung des Geräts blockiert haben, durch Crypto-Ransomware abgelöst. Diese verschlüsselt die Dateien des Benutzers und fordert zum Wiedererhalt eine Lösegeldsumme, die nicht-verfolgbar bezahlt werden soll. Schätzungen zufolge erbeuten die Hersteller von Crypto-Ransomware auf diesem Wege ca. 100 Millionen Euro pro Jahr. \cite{money}
 
 	\begin{figure}[h!]
 		\centering
@@ -138,7 +141,7 @@ In den letzten Jahren haben sich die bekannt gewordenen Fälle von Ransomware ve
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Einteilung}
+\section{Kategorisierung}
 \input{einleitung.tex}
 
 \section{Aktuelle Ransomware}
