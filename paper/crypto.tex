@@ -15,16 +15,16 @@ Es gibt eine Reihe an unterschiedlichsten Algorithmen und Verfahren für symmetr
 \texttt{AES} ist hierbei eine Abkürzung für \texttt{Advanced Encryption Standard} und wird meist synonym für den \texttt{Rijndael}-Algorithmus verwendet. Dieses Verfahren ist heute so verbreitet, dass es beispielsweise in modernen Prozessoren direkt als Maschinenbefehl zur Verfügung steht \cite{crypto:aes_intel}. 
 \\
 
-Bei Ransomware ist es während der Phase, in der die eigentliche Dateiverschlüsselung durchgeführt wird, wichtig, nicht vom Opfer erkannt zu werden. Allerdings würde es wahrscheinlich auf unkundigen Nutzern auffallen, wenn der Computer auf Eingaben nur noch verzögert reagiert, wie es typischerweise geschieht, wenn die \texttt{CPU} im Hintergrund mit rechenintensiven Aufgaben, zu denen auch Verschlüsselungsoperationen gehören, ausgelastet ist.
+Bei Ransomware ist es wichtig während der Phase, in der die eigentliche Dateiverschlüsselung durchgeführt wird, nicht vom Opfer erkannt zu werden. Allerdings würde es wahrscheinlich selbst unkundigen Nutzern auffallen, wenn der Computer auf Eingaben nur noch verzögert reagiert, wie es typischerweise geschieht, wenn die \texttt{CPU} im Hintergrund mit rechenintensiven Aufgaben, zu denen auch Verschlüsselungsoperationen gehören, ausgelastet ist.
 
-Mittels der Hardwarebeschleunigung wird zwar die \texttt{CPU}-Belastung reduziert, dennoch ist oftmals eine Verlangsamung des Computers festzustellen, vor allem bedingt durch die großen Datenmengen die vom den angeschlossenen Speichergeräten gelesen und verschlüsselt geschrieben werden müssen.
+Mittels der Hardwarebeschleunigung wird zwar die \texttt{CPU}-Belastung reduziert, dennoch ist oftmals eine Verlangsamung des Computers festzustellen, vor allem bedingt durch die großen Datenmengen, die von den angeschlossenen Speichergeräten gelesen und verschlüsselt geschrieben werden müssen.
 
-Sowohl für den Entwickler als auch den Betreiber der Ransomware ist es hier vorteilhaft eine gewisse Lastbegrenzung, sowohl für Speicher als auch \texttt{CPU}, einzubauen bzw. zu verwenden.
+Sowohl für den Entwickler, als auch den Betreiber der Ransomware ist es hier vorteilhaft eine gewisse Lastbegrenzung, sowohl für Speicher als auch \texttt{CPU} einzubauen bzw. zu verwenden.
 \\
 
-Der größte Nachteil beim Einsatz von symmetrischer Verschlüsselung ist allerdings die Eigenschaft, dass sowohl für die Ver- als auch für die Entschlüsselung der gleiche Schlüssel verwendet wird. Prinzipbedingt muss der Schlüssel während der Verschlüsselung einer Datei im \texttt{RAM} gehalten werden und kann somit von anderen Programmen ausgelesen werden.
+Der größte Nachteil beim Einsatz von symmetrischer Verschlüsselung ist allerdings die Eigenschaft, dass sowohl für die Ver- als auch für die Entschlüsselung der gleiche Schlüssel verwendet wird. Prinzip bedingt muss der Schlüssel während der Verschlüsselung einer Datei im \texttt{RAM} gehalten werden und kann somit von anderen Programmen ausgelesen werden.
 
-Wird ein Schlüssel für mehrere oder auch alle Dateien verwendet, so stellt das Auslesen des verwendeten Schlüssels aus dem \texttt{RAM} ein gute Möglichkeit dar, ohne Zahlung die verschlüsselten Dateien wird zu decodieren. 
+Wird ein Schlüssel für mehrere oder auch alle Dateien verwendet, so stellt das Auslesen des verwendeten Schlüssels aus dem \texttt{RAM} eine gute Möglichkeit dar, ohne Zahlung die verschlüsselten Dateien zu decodieren. 
 
 Diese prinzipielle Schwäche einer symmetrischen Verschlüsselung lässt sich durch die Verwendung asymmetrischer Verschlüsselung umgehen.
 
@@ -58,4 +58,4 @@ Hierfür werden zufällige Schlüssel erzeugt, meist lange Zufallszahlen, die f�
 
 Auf diese Weise lassen sich auch große Mengen an Daten effizient mittels asymmetrischer Kryptographie übertragen.
 
-Mit Blick auf Ransomware bietet hybride Verschlüsselung die Möglichkeit ein Schlüsselpaar zu erzeugen und nur den öffentlichen Schlüssel für die Verschlüsselung der sym. Schlüssel auf dem Computer des Opfers zu belassen. Die sym. Schlüssel können dann zufällig erzeugt werden und verschlüsselt zusammen mit den Dateien gespeichert werden. \\ Bezahlt das Opfer die geforderte Summe, so wird im der private Schlüssel mitgeteilt, sodass eine Decodierung aller Dateien möglich ist.
+Mit Blick auf Ransomware bietet hybride Verschlüsselung die Möglichkeit ein Schlüsselpaar zu erzeugen und nur den öffentlichen Schlüssel für die Verschlüsselung der sym. Schlüssel auf dem Computer des Opfers zu belassen. Die sym. Schlüssel können dann zufällig erzeugt werden und verschlüsselt zusammen mit den Dateien gespeichert werden. \\ Bezahlt das Opfer die geforderte Summe, so wird ihm der private Schlüssel mitgeteilt, sodass eine Decodierung aller Dateien möglich ist.
