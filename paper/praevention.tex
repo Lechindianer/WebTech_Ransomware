@@ -29,14 +29,19 @@
 \subsection{Serverseitige Mailfilter}
 	Es gibt allerdings noch weitere Möglichkeiten die Angriffsvektoren zu verringern. Eine ist es, alle ausführbaren Dateien (exe, src, chm, bat, com, msi, jar, cnd, hta, pif, scf) grundsätzlich zu löschen, oder zumindest in Quarantäne zu verschieben.\cite{bsi:ransome}\\
 	Das selbe gilt auch für verschlüsselte Archive und Office-Dateien mit Makros. Es ist durchaus möglich, dass dies nicht praktikabel ist. Dennoch sollten potenziell gefährliche Anhänge als solche prominent markiert werden.\cite{bsi:ransome}\\
-	Neben, wie schon in der vorherigen Sektion erklärt, Greylisting kann man noch das SPF\footnote{Sender-Policy-Framework} nutzen, welches bereits die Annahme von nicht legitimen E-Mails reduziert, was allerdings auf zu unerwünschten Nebeneffekten führen kann, wenn eigentlich legitime Mails abgelehnt werden. Zudem sollte der Mail-Server so konfiguriert sein, dass dieser keine Mails von internen Mail-Adressen, mit externer Absende-Adresse entgegen nimmt.\cite{bsi:ransome} Dies verhindert, dass vermeintliche Mails von  Arbeitskollegen gefälscht werden können, da diese bekanntlich als legitim aufgefasst werden.
-	
+	Neben, wie schon in der vorherigen Sektion erklärt, Greylisting kann man noch das SPF\footnote{Sender-Policy-Framework} nutzen, welches bereits die Annahme von nicht legitimen E-Mails reduziert, was allerdings auf zu unerwünschten Nebeneffekten führen kann, wenn eigentlich legitime Mails abgelehnt werden. Zudem sollte der Mail-Server so konfiguriert sein, dass dieser keine Mails von internen Mail-Adressen, mit externer Absende-Adresse entgegen nimmt.\cite{bsi:ransome}\\
+	Dies verhindert, dass vermeintliche Mails von  Arbeitskollegen gefälscht werden können, da diese bekanntlich als legitim aufgefasst werden.
 	
 \subsection{Netzlaufwerke sichern}
 	Eine zentrale Datenhaltung ist heute unerlässlich, schon aus dem Grund, dass zentrale Backups erstellt werden können. Die kann allerdings zu einer Gefahr werden, da bereits Ransomeware existiert, die in der Lage ist Netzlaufwerke, auf welchen der Benutzer Schreibrechte hat, zu verschlüsseln. Die kann besonders großen Schaden verursachen, da nicht nur die Daten des Benutzers, sonder auch Daten von andren Benutzern, dessen Rechner eigentlich überhaupt nicht infiziert sind, auch verschlüsselt werden. Deshalb ist die Empfehlung des BSI die Daten von z.B. bereits beendeten Projekten auf schreibgeschützt zu setzen, da somit effektiv verhindert wird, dass die Ransomeware arbeiten kann, da sie zwar verschlüssen kann, allerdings die unverschlüsselten Daten nicht löschen kann. Somit ist der Angriff wirkungslos. \cite{bsi:ransome}\\
 	Hierbei sollte allerdings beachtet werden, dass dies nur für Dateien, die nicht mehr bearbeitet werden müssen anwendbar ist. Somit wären z.B. Dateien eins aktiv laufende Projektes auf diese weise nicht schüztbar, da dies im Alltag einfach nicht praktikabel wäre.
+	
 \subsection{Netzwerke segmentieren}
+	Eine weitere Möglichkeit ist es das Netzwerk zu unterteilen um z.B. den Zugriff auf Projektdaten nur den erforderlichen Teams zu erteilen. Somit kann sichergestellt werden, dass nur die Daten des Teams in Mitleidenschaft gezogen werden in welchem ein Rechner infiziert wurde. Zudem sollte darauf geachtet werden, dass das Administrator-Konto entsprechend gesichert ist, denn hiermit steht und fällt das komplette Konzept.\cite{bsi:ransome}
+	
 \subsection{Zugänge sichern}
+	Wie schon in der vorherigen Sektion kurz erwähnt, ist es wichtig, dass Administrator-Zugänge gut gesichert sind. Dies gilt nicht nur für diese, sondern für alle Zugänge. Manche Ransomware ist unter andrem dazu in der Lage sich über gekaperte Remote-Zugänge zu verbreiten. Solche Zugänge sollten wenn möglich immer über VPNs abgesichert werden und zudem mit einer Zwei-Faktor-Authentifizierung versehen werden. Zudem ist es möglich ein höheres Sicherheitslevel durch Quell-IP-Filter zu erreichen.\cite{bsi:ransome}
+	
 \subsection{Aktueller Virenschutz}
 
 	Wie bereits beschrieben, benötigen die Antiviren-Hersteller circa 12 Stunden vom Zeitpunkt der Erkennung einer neuen Malware bis zum fertigen Update für ihre Softwarelösung. Um gegen eine Infizierung durch Ransomware gewappnet zu sein, ist es also anzuraten, möglichst täglich auf notwendige Updates hin zu überprüfen. Dies ist in nahezu allen Antiviren-Lösungen auch automatisch einstellbar.
@@ -49,7 +54,11 @@
 \subsection{Backups / Datensicherungen}
 
 	Falls trotz aller getätigter Anstrengungen doch eine Infizierung erfolgte, ist es notwendig aktuelle Backups vorhanden zu haben. Diese sollten in regelmäßigen Abständen und automatisch erfolgen, da sie sonst erfahrungsgemäß irgendwann nicht mehr durchgeführt werden. Da Ransomware meist auch versucht auf Netzlaufwerke zuzugreifen, ist es wichtig, dass die Backups auf einem WORM-Medium (Write Once Read Many, etwa Bandspeicher) gespeichert werden. So kann verhindert werden, dass die Ransomware auch die Backups verschlüsselt.\\
-	Ansonsten gilt wie üblich, dass Backups getestet werden müssen, um ihre Konsistenz und Wiederherstellbarkeit zu demonstrieren.
+	Ansonsten gilt wie üblich, dass Backups getestet werden müssen, um ihre Konsistenz und Wiederherstellbarkeit zu demonstrieren.\\
+	Eine weitere Möglichkeit ist es \textit{Git} als Backupsystem für Dokumente zu verwenden. Hierbei ist wichtig, dass Git nicht nur lokal verwendet wird, sondern auf jeden Fall zusammen mit einem Remote-Server, auf den die Änderungen \textit{Gepusht} werden. Würde das Git nur lokal verwendet werden, würde es absolut keinen Schutz bieten, da die Ramsomware einfach das ganze Repository verschlüsselt und somit unbrauchbar machen würde.\\
+	Ein Alternative hierfür wäre z.B. \textit{Bup}. Diese Software baut auf das Paketformat von Git, ermöglicht es allerdings auch sehr große Dateien effizient und schnell zu sichern.\cite{bup}
+	
+	
 	
 \subsection{Malwarebytes Anti-Ransomware}
 
