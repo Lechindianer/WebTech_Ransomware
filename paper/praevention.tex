@@ -1,6 +1,6 @@
 \subsection{Aktuelle Patchlevel}
 
-	 Grundsätzlich sollte, um die allgemeine Sicherheit eines Systems zu verbessern, immer jegliche Software, sowohl des Betriebssystem wie auch die verwendete Anwendungssoftware, auf den aktuellen Stand gehalten werden. Ein besonders großes Risiko besteht bei Software, die zum öffnen von Inhalten aus den Internet verwendet werden, wie z.B. Web-Browser, Browser-Plugins, E-Mail-Programme, PDF-Betrachter und Büroanwendungen\cite{bsi:ransome}.\\
+	 Grundsätzlich sollte, um die allgemeine Sicherheit eines Systems zu verbessern, immer jegliche Software, sowohl des Betriebssystem wie auch die verwendete Anwendungssoftware, auf den aktuellen Stand gehalten werden. Ein besonders großes Risiko besteht bei Software, die zum öffnen von Inhalten aus den Internet verwendet werden, wie z.B. Web-Browser, Browser-Plugins, E-Mail-Programme, PDF-Betrachter und Büroanwendungen. \cite{bsi:ransome}\\
 	 
 	 Dies gilt in besonderem Maße für Systeme auf denen Windows betrieben wird, da diese für die Erpresser die größte Verbreitung ermöglichen, was der großen Verbreitung des Betriebssystems zuzuschreiben ist. Dies soll keinesfalls bedeuten, dass alternative Systeme weniger gefährdet sind, allerdings das Risiko bei Windows basierten Systemen erhöht sein könnte.
 	 
@@ -8,9 +8,9 @@
 
 	Zudem kann die Angriffsfläche reduziert werden, indem nicht benötigt Software deinstalliert wird, wodurch auf die Anzahl der Software, die auf dem neuesten Stand gehalten werden muss sich verringert.\\
 	
-	Des Weiten ist kann das Systemweite deaktivieren der Script-Ausführung, wenn dies möglich ist das Risiko deutlich minderen, da Ransomware teilweise über E-Mail-Anhänge in Form von Javascript und VisualBasic-Skripten verteilt wird. Somit kann der Anhang nicht auf dem System ausgeführt werden und eine Infektion wird verhindert\cite{bsi:ransome}.\\
+	Des Weiten ist kann das Systemweite deaktivieren der Script-Ausführung, wenn dies möglich ist das Risiko deutlich minderen, da Ransomware teilweise über E-Mail-Anhänge in Form von Javascript und VisualBasic-Skripten verteilt wird. Somit kann der Anhang nicht auf dem System ausgeführt werden und eine Infektion wird verhindert. \cite{bsi:ransome}\\
 	
-	Zudem ist es sinnvoll, wenn nicht benötigte Browser-Plugins deinstalliert werden (z.B. Flash, Java, Silverlight)\cite{bsi:ransome}\\, da diese bekanntermaßen häufig über Sicherheitslücken verfügen, was allein schon an den häufigen Sicherheits-Pachtes festgemacht werden kann.  
+	Zudem ist es sinnvoll, wenn nicht benötigte Browser-Plugins deinstalliert werden (z.B. Flash, Java, Silverlight) \cite{bsi:ransome}\\, da diese bekanntermaßen häufig über Sicherheitslücken verfügen, was allein schon an den häufigen Sicherheits-Pachtes festgemacht werden kann.  
 	
 \subsection{Makros deaktivieren}
 
@@ -18,19 +18,19 @@
 	
 \subsection{Text-Mail erzwingen}
 
-	Dem BSI zufolge ist ist eine eine gute Idee, die HTML-Darstellung von E-Mails zu deaktivieren. Dies kann hilfreich sein, da für die Darstellung solcher E-Mails die selben Mechanismen benötigt werden, wie sie in Webbrowsern nötig sind. Dies bringt weiter Komplexität in die E-Mail Software und somit potentiell weitere Sicherheitslücken. Die können natürlich nicht ausgenutzt werden, wenn man entsprechende Komponente nicht nutzt. Zudem sollte man das automatische ausführen von Anhängen beim Anklicken verhindern\cite{bsi:ransome}.
+	Dem BSI zufolge ist ist eine eine gute Idee, die HTML-Darstellung von E-Mails zu deaktivieren. Dies kann hilfreich sein, da für die Darstellung solcher E-Mails die selben Mechanismen benötigt werden, wie sie in Webbrowsern nötig sind. Dies bringt weiter Komplexität in die E-Mail Software und somit potentiell weitere Sicherheitslücken. Die können natürlich nicht ausgenutzt werden, wenn man entsprechende Komponente nicht nutzt. Zudem sollte man das automatische ausführen von Anhängen beim Anklicken verhindern. \cite{bsi:ransome}
 	
 	
 \subsection{Greylisting / Tarpitting}
 	
-	Um einer Infektion durch Mail zuvorzukommen, hilft es den Angriffsvektor durch Empfang von Spam-Mails generell zu unterbinden. Die Erfahrungen der letzten Jahre haben gezeigt, dass Blacklisting generell eine schlechte Idee ist. Manche Blacklist-Dienste sperren gleich komplette Netzbereiche eines ISPs, wenn aus dessen IP-Adress-Bereich Spam verschickt wird. Greylisting ist eine 2003 erfundene Methode, die einen alternativen Ansatz bietet: Der empfangende Mail-Server schickt dem potenziellen Spammer eine Nachricht, dass der Service zurzeit überlastet ist und der Sender sich zu einem späteren Zeitpunkt nochmals melden soll. Dieses standardkonforme Verhalten aber wird von Spammern nicht implementiert und so melden sich nur reguläre Mail-Server nach einer Zeit wieder\cite{greylisting}. \\
+	Um einer Infektion durch Mail zuvorzukommen, hilft es den Angriffsvektor durch Empfang von Spam-Mails generell zu unterbinden. Die Erfahrungen der letzten Jahre haben gezeigt, dass Blacklisting generell eine schlechte Idee ist. Manche Blacklist-Dienste sperren gleich komplette Netzbereiche eines ISPs, wenn aus dessen IP-Adress-Bereich Spam verschickt wird. Greylisting ist eine 2003 erfundene Methode, die einen alternativen Ansatz bietet: Der empfangende Mail-Server schickt dem potenziellen Spammer eine Nachricht, dass der Service zurzeit überlastet ist und der Sender sich zu einem späteren Zeitpunkt nochmals melden soll. Dieses standardkonforme Verhalten aber wird von Spammern nicht implementiert und so melden sich nur reguläre Mail-Server nach einer Zeit wieder. \cite{greylisting} \\
 	Einen Schritt weiter geht \glqq Tarpitting\grqq, bei dem ähnlich wie bei der namensgebenden Teergrube die Geschwindigkeit verlangsamt wird. Der Spammer möchte soviel Mails wie möglich in kurzer Zeit versenden. Greylisting verjagt die Spammer zwar, aber lässt diese noch ungehindert ihr Werk tun. Die Tarpit reguliert den Mailempfang auf eine möglichst geringe Geschwindigkeit herunter, um so den Spammer möglichst lange im Sendezustand zu lassen. Solang diese Verbindung offen ist, wird er keine weitere öffnen. So wird beim Spammer eine Last erzeugt und dieser am massenhaften Versenden weiterer Mails gehindert.
 	
 \subsection{Serverseitige Mailfilter}
 
-	Es gibt allerdings noch weitere Möglichkeiten die Angriffsvektoren zu verringern. Eine ist es, alle ausführbaren Dateien (exe, src, chm, bat, com, msi, jar, cnd, hta, pif, scf) grundsätzlich zu löschen, oder zumindest in Quarantäne zu verschieben.\cite{bsi:ransome}\\
-	Das selbe gilt auch für verschlüsselte Archive und Office-Dateien mit Makros. Es ist durchaus möglich, dass dies nicht praktikabel ist. Dennoch sollten potenziell gefährliche Anhänge als solche prominent markiert werden.\cite{bsi:ransome}\\
-	Neben, wie schon in der vorherigen Sektion erklärt, Greylisting kann man noch das SPF\footnote{Sender-Policy-Framework} nutzen, welches bereits die Annahme von nicht legitimen E-Mails reduziert, was allerdings auf zu unerwünschten Nebeneffekten führen kann, wenn eigentlich legitime Mails abgelehnt werden. Zudem sollte der Mail-Server so konfiguriert sein, dass dieser keine Mails von internen Mail-Adressen, mit externer Absende-Adresse entgegen nimmt.\cite{bsi:ransome}\\
+	Es gibt allerdings noch weitere Möglichkeiten die Angriffsvektoren zu verringern. Eine ist es, alle ausführbaren Dateien (exe, src, chm, bat, com, msi, jar, cnd, hta, pif, scf) grundsätzlich zu löschen, oder zumindest in Quarantäne zu verschieben. \cite{bsi:ransome}\\
+	Das selbe gilt auch für verschlüsselte Archive und Office-Dateien mit Makros. Es ist durchaus möglich, dass dies nicht praktikabel ist. Dennoch sollten potenziell gefährliche Anhänge als solche prominent markiert werden. \cite{bsi:ransome}\\
+	Neben, wie schon in der vorherigen Sektion erklärt, Greylisting kann man noch das SPF\footnote{Sender-Policy-Framework} nutzen, welches bereits die Annahme von nicht legitimen E-Mails reduziert, was allerdings auf zu unerwünschten Nebeneffekten führen kann, wenn eigentlich legitime Mails abgelehnt werden. Zudem sollte der Mail-Server so konfiguriert sein, dass dieser keine Mails von internen Mail-Adressen, mit externer Absende-Adresse entgegen nimmt. \cite{bsi:ransome}\\
 	Dies verhindert, dass vermeintliche Mails von  Arbeitskollegen gefälscht werden können, da diese bekanntlich als legitim aufgefasst werden.
 	
 \subsection{Netzlaufwerke sichern}
@@ -39,10 +39,10 @@
 	Hierbei sollte allerdings beachtet werden, dass dies nur für Dateien, die nicht mehr bearbeitet werden müssen anwendbar ist. Somit wären z.B. Dateien eins aktiv laufende Projektes auf diese weise nicht schüztbar, da dies im Alltag einfach nicht praktikabel wäre.
 	
 \subsection{Netzwerke segmentieren}
-	Eine weitere Möglichkeit ist es das Netzwerk zu unterteilen um z.B. den Zugriff auf Projektdaten nur den erforderlichen Teams zu erteilen. Somit kann sichergestellt werden, dass nur die Daten des Teams in Mitleidenschaft gezogen werden in welchem ein Rechner infiziert wurde. Zudem sollte darauf geachtet werden, dass das Administrator-Konto entsprechend gesichert ist, denn hiermit steht und fällt das komplette Konzept.\cite{bsi:ransome}
+	Eine weitere Möglichkeit ist es das Netzwerk zu unterteilen um z.B. den Zugriff auf Projektdaten nur den erforderlichen Teams zu erteilen. Somit kann sichergestellt werden, dass nur die Daten des Teams in Mitleidenschaft gezogen werden in welchem ein Rechner infiziert wurde. Zudem sollte darauf geachtet werden, dass das Administrator-Konto entsprechend gesichert ist, denn hiermit steht und fällt das komplette Konzept. \cite{bsi:ransome}
 	
 \subsection{Zugänge sichern}
-	Wie schon in der vorherigen Sektion kurz erwähnt, ist es wichtig, dass Administrator-Zugänge gut gesichert sind. Dies gilt nicht nur für diese, sondern für alle Zugänge. Manche Ransomware ist unter andrem dazu in der Lage sich über gekaperte Remote-Zugänge zu verbreiten. Solche Zugänge sollten wenn möglich immer über VPNs abgesichert werden und zudem mit einer Zwei-Faktor-Authentifizierung versehen werden. Zudem ist es möglich ein höheres Sicherheitslevel durch Quell-IP-Filter zu erreichen.\cite{bsi:ransome}
+	Wie schon in der vorherigen Sektion kurz erwähnt, ist es wichtig, dass Administrator-Zugänge gut gesichert sind. Dies gilt nicht nur für diese, sondern für alle Zugänge. Manche Ransomware ist unter andrem dazu in der Lage sich über gekaperte Remote-Zugänge zu verbreiten. Solche Zugänge sollten wenn möglich immer über VPNs abgesichert werden und zudem mit einer Zwei-Faktor-Authentifizierung versehen werden. Zudem ist es möglich ein höheres Sicherheitslevel durch Quell-IP-Filter zu erreichen. \cite{bsi:ransome}
 	
 \subsection{Aktueller Virenschutz}
 
@@ -58,11 +58,11 @@
 	Falls trotz aller getätigter Anstrengungen doch eine Infizierung erfolgte, ist es notwendig aktuelle Backups vorhanden zu haben. Diese sollten in regelmäßigen Abständen und automatisch erfolgen, da sie sonst erfahrungsgemäß irgendwann nicht mehr durchgeführt werden. Da Ransomware meist auch versucht auf Netzlaufwerke zuzugreifen, ist es wichtig, dass die Backups auf einem WORM-Medium (Write Once Read Many, etwa Bandspeicher) gespeichert werden. So kann verhindert werden, dass die Ransomware auch die Backups verschlüsselt.\\
 	Ansonsten gilt wie üblich, dass Backups getestet werden müssen, um ihre Konsistenz und Wiederherstellbarkeit zu demonstrieren.\\
 	Eine weitere Möglichkeit ist es \textit{Git} als Backupsystem für Dokumente zu verwenden. Hierbei ist wichtig, dass Git nicht nur lokal verwendet wird, sondern auf jeden Fall zusammen mit einem Remote-Server, auf den die Änderungen \textit{Gepusht} werden. Würde das Git nur lokal verwendet werden, würde es absolut keinen Schutz bieten, da die Ramsomware einfach das ganze Repository verschlüsselt und somit unbrauchbar machen würde.\\
-	Ein Alternative hierfür wäre z.B. \textit{Bup}. Diese Software baut auf das Paketformat von Git, ermöglicht es allerdings auch sehr große Dateien effizient und schnell zu sichern.\cite{bup}
+	Ein Alternative hierfür wäre z.B. \textit{Bup}. Diese Software baut auf das Paketformat von Git, ermöglicht es allerdings auch sehr große Dateien effizient und schnell zu sichern. \cite{bup}
 	
 	
 	
 \subsection{Malwarebytes Anti-Ransomware}
 
-	Das Computermagazin \glqq heise\grqq{} rät zur Installation der Software \glqq Anti-Ransomware\grqq{} der Firma Malwarebytes. Diese untersucht die laufenden Prozesse auf die typischen Merkmale von Ransomware, sprich es werden innerhalb kürzester Zeit Dateien verschlüsselt und mit einem neuen Namen versehen, der aus ursprünglichem Dateinamen und Ransomware-spezifischem Suffix besteht. Falls nun ein Prozess massenhaft Dateien umbenennen möchte, wird dies von \glqq Anti-Ransomware\glqq{} erkannt und dessen weitere Ausführung blockiert\cite{malwarebytes}.
+	Das Computermagazin \glqq heise\grqq{} rät zur Installation der Software \glqq Anti-Ransomware\grqq{} der Firma Malwarebytes. Diese untersucht die laufenden Prozesse auf die typischen Merkmale von Ransomware, sprich es werden innerhalb kürzester Zeit Dateien verschlüsselt und mit einem neuen Namen versehen, der aus ursprünglichem Dateinamen und Ransomware-spezifischem Suffix besteht. Falls nun ein Prozess massenhaft Dateien umbenennen möchte, wird dies von \glqq Anti-Ransomware\grqq{} erkannt und dessen weitere Ausführung blockiert. \cite{malwarebytes}
 
