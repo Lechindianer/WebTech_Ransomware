@@ -10,17 +10,15 @@ Abbildung~\ref{fig:sym_verschl} zeigt eine schematische Darstellung.
 	\label{fig:sym_verschl}
 \end{figure}
 
-Es gibt eine Reihe an unterschiedlichsten Algorithmen und Verfahren für symmetrische Verschlüsselung, allerdings hat sich mit \texttt{AES} ein Verfahren als de-facto Standard für verschiedenste Anwendungsbereiche etabliert.
+Es gibt eine Reihe an unterschiedlichsten Algorithmen und Verfahren für die symmetrische Verschlüsselung, allerdings hat sich mit \texttt{AES} ein Verfahren als de-facto Standard für verschiedenste Anwendungsbereiche etabliert.
 
 \texttt{AES} ist hierbei eine Abkürzung für \texttt{Advanced Encryption Standard} und wird meist synonym für den \texttt{Rijndael}-Algorithmus verwendet. Dieses Verfahren ist heute so verbreitet, dass es beispielsweise in modernen Prozessoren direkt als Maschinenbefehl zur Verfügung steht. \cite{crypto:aes_intel} 
-\\
 
-Bei Ransomware ist es wichtig während der Phase, in der die eigentliche Dateiverschlüsselung durchgeführt wird, nicht vom Opfer erkannt zu werden. Allerdings würde es wahrscheinlich selbst unkundigen Nutzern auffallen, wenn der Computer auf Eingaben nur noch verzögert reagiert, wie es typischerweise geschieht, wenn die \texttt{CPU} im Hintergrund mit rechenintensiven Aufgaben, zu denen auch Verschlüsselungsoperationen gehören, ausgelastet ist.
+Bei Ransomware ist es wichtig, während der Phase, in der die eigentliche Dateiverschlüsselung durchgeführt wird, nicht vom Opfer erkannt zu werden. Allerdings würde es wahrscheinlich selbst unkundigen Nutzern auffallen, wenn der Computer auf Eingaben nur noch verzögert reagiert, wie es typischerweise geschieht, wenn die \texttt{CPU} im Hintergrund mit rechenintensiven Aufgaben, zu denen auch Verschlüsselungsoperationen gehören, ausgelastet ist.
 
 Mittels der Hardwarebeschleunigung wird zwar die \texttt{CPU}-Belastung reduziert, dennoch ist oftmals eine Verlangsamung des Computers festzustellen, vor allem bedingt durch die großen Datenmengen, die von den angeschlossenen Speichergeräten gelesen und verschlüsselt geschrieben werden müssen.
 
-Sowohl für den Entwickler, als auch den Betreiber der Ransomware ist es hier vorteilhaft eine gewisse Lastbegrenzung, sowohl für Speicher als auch \texttt{CPU} einzubauen bzw. zu verwenden.
-\\
+Sowohl für den Entwickler, als auch den Betreiber der Ransomware ist es hier vorteilhaft, eine gewisse Lastbegrenzung, sowohl für Speicher als auch \texttt{CPU} einzubauen bzw. zu verwenden.
 
 Der größte Nachteil beim Einsatz von symmetrischer Verschlüsselung ist allerdings die Eigenschaft, dass sowohl für die Ver- als auch für die Entschlüsselung der gleiche Schlüssel verwendet wird. Prinzip bedingt muss der Schlüssel während der Verschlüsselung einer Datei im \texttt{RAM} gehalten werden und kann somit von anderen Programmen ausgelesen werden.
 
@@ -42,11 +40,11 @@ Asymmetrische Verschlüsselung basiert auf zwei Schlüsseln, einem öffentlichen
 
 Soll ein Klartext verschlüsselt werden, so wird hierfür der öffentliche Schlüssel des Empfängers verwendet. Die Entschlüsselung muss dann mit dem zugehörigen privaten Schlüssel erfolgen, eine Entschlüsselung mit dem öffentlichen Schlüssel ist nicht mehr möglich.
 
-Es existieren mehrere genaue Verfahren für asymmetrische Verschlüsselung. Die Bekanntesten sind hier das \texttt{RSA}-Verfahren und das \texttt{Elgamal}-Verfahren.\\
+Es existieren mehrere genaue Verfahren für die asymmetrische Verschlüsselung. Die Bekanntesten sind hier das \texttt{RSA}-Verfahren und das \texttt{Elgamal}-Verfahren.\\
 Beide Verfahren unterscheiden sich zwar mathematisch stark voneinander, da \texttt{RSA} auf dem Problem der Primfaktorzerlegung basiert, während sich \texttt{Elgamal} auf die Schwierigkeit des diskreten Logarithmus stützt. \\
-Hinsichtlich ihrer Verwendung und Sicherheit im Umfeld von Ransomware sind sich beide Verfahren ebenbürtig, weshalb im weiteren nur das \texttt{RSA}-Verfahren behandelt wird.
+Hinsichtlich ihrer Verwendung und Sicherheit im Umfeld von Ransomware sind sich beide Verfahren ebenbürtig, weshalb im Weiteren nur das \texttt{RSA}-Verfahren behandelt wird.
 
-Auf Grund der Komplexität der Berechnungen ist \texttt{RSA} im Vergleich zu \texttt{AES} langsam \cite{crypto:aes_rsa_benchmark}. Deshalb wird es nur für verhältnismäßig kurze Klartexte eingesetzt (< 1 KB), auch da die maximale Länge des Klartexts von der Länge des verwendeten Schlüssels abhängt. \cite{rsa}
+Auf Grund der Komplexität der Berechnungen ist \texttt{RSA} im Vergleich zu \texttt{AES} langsam. \cite{crypto:aes_rsa_benchmark} Deshalb wird es nur für verhältnismäßig kurze Klartexte eingesetzt (< 1 KB), auch da die maximale Länge des Klartexts von der Länge des verwendeten Schlüssels abhängt. \cite{rsa}
 
 Der große Vorteil von asymmetrischer Verschlüsselung liegt im sicheren Schlüsselaustausch, der nicht auf einen bereits gesicherten Kanal angewiesen ist, sondern auch über ein unsicheres Medium, beispielsweise über das Internet erfolgen kann, ohne dass es für einen Angreifer möglich ist die beteiligten Schlüssel zu belauschen oder zu berechnen.
 
@@ -58,4 +56,8 @@ Hierfür werden zufällige Schlüssel erzeugt, meist lange Zufallszahlen, die f�
 
 Auf diese Weise lassen sich auch große Mengen an Daten effizient mittels asymmetrischer Kryptographie übertragen.
 
-Mit Blick auf Ransomware bietet hybride Verschlüsselung die Möglichkeit ein Schlüsselpaar zu erzeugen und nur den öffentlichen Schlüssel für die Verschlüsselung der sym. Schlüssel auf dem Computer des Opfers zu belassen. Die sym. Schlüssel können dann zufällig erzeugt werden und verschlüsselt zusammen mit den Dateien gespeichert werden. \\ Bezahlt das Opfer die geforderte Summe, so wird ihm der private Schlüssel mitgeteilt, sodass eine Decodierung aller Dateien möglich ist.
+Mit Blick auf Ransomware bietet hybride Verschlüsselung die Möglichkeit ein Schlüsselpaar zu erzeugen und nur den öffentlichen Schlüssel für die Verschlüsselung der sym. Schlüssel auf dem Computer des Opfers zu belassen. Die symmetrischen Schlüssel können dann zufällig erzeugt werden und verschlüsselt zusammen mit den Dateien gespeichert werden. \\ Bezahlt das Opfer die geforderte Summe, so wird ihm der private Schlüssel mitgeteilt, sodass eine Decodierung aller Dateien möglich ist.
+
+
+
+

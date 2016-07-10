@@ -1,16 +1,16 @@
-Alle hier beschriebenen Ransomware sind innerhalb der letzten Jahre erschienen und beschreiben somit den zum Schreiben des vorliegenden Papers aktuellen Stand der Technik.
+Alle hier beschriebenen Ransomware sind innerhalb der letzten Jahre erschienen und beschreiben somit den aktuellen Stand der Technik zum Zeitpunkt des Verfassens.
 
 \subsection{TeslaCrypt}
 TeslaCrypt war der erste der modernen Crypto-Ransomware, der von den Medien aufgegriffen und somit einer breiten Öffentlichkeit bekannt gemacht wurde. Ende 2015 \cite{tesla:entdeckt} wurde dieser entdeckt, jedoch bereits kurze Zeit später ein Tool veröffentlicht \cite{tesla:geknackt}, mit dem betroffene Anwender ihre Daten retten konnten.
 
-Version 3 der Ransomware wurde von den Angreifern grundlegend verändert. So wurde der Algorithmus zum Schlüsselaustausch erneuert, was es vorerst unmöglich gemacht hat, den privaten Schlüssel der Ransomware aus den verschlüsselten Dateien abzuleiten. \cite{tesla:version3} \cite{tesla:version3_2}
+Version 3 der Ransomware wurde von den Angreifern grundlegend verändert. So wurde der Algorithmus zum Schlüsselaustausch erneuert, was es vorerst unmöglich gemacht hat, den privaten Schlüssel der Ransomware aus den verschlüsselten Dateien abzuleiten. Angegriffen wurden allerdings nur bestimmte Dateitypen. \cite{tesla:version3} \cite{tesla:version3_2}
 
 Version 4 kann zudem Dateien größer als 4 GB verschlüsseln \cite{tesla:version4}, zuvor wurden Dateien größer als dieses Limit unwiderruflich zerstört. In der vorerst letzten veröffentlichen Version 4.1a \cite{tesla:version41} wurden weitere Dateitypen verschlüsselt. So wurden unter anderem Bitcoin-Wallets und Spielstände verschlüsselt, die für den Nutzer ein angenommenen materiellen und auch ideellen Wert darstellen.
 
 Am 18. Mai 2016 wurde bekannt, dass die Entwickler von TeslaCrypt die Weiterentwicklung eingestellt haben und als Entschuldigung den Schlüssel zur Verschlüsselung frei auf ihrer Webseite veröffentlicht. Die Wochen zuvor wurde von Experten der IT-Sicherheitsfirma ESET bereits festgestellt, dass die Entwickler der Ransomware ihre Aktivitäten immer weiter verringern. \cite{tesla:end}
 
 \subsection{Locky}
-Anfang 2016 wurde eine neue Ransomware entdeckt, die aufgrund der Dateiendung der verschlüsselten Daten in den Medien als \glqq Locky\grqq{} bekannt wurde. Es wurden nicht nur Bilder, Dokumente, Videos und Musik angegriffen, sondern zudem auch Datenbanken, Quellcode, Zertifikate und Krypto-Schlüssel. Durch die lange Liste an angegriffenen Dateien rechnen die Entwickler von Locky mit einer höheren Chance, dass die betroffenen Anwender bereit sind, für den Wiedererhalt ihrer Dateien zu zahlen.
+Anfang 2016 wurde eine neue Ransomware entdeckt, die aufgrund der Dateiendung der verschlüsselten Daten in den Medien als \glqq Locky\grqq{} bekannt wurde. Es wurden nicht nur Bilder, Dokumente, Videos und Musik angegriffen, sondern zudem auch Datenbanken, Quellcode, Zertifikate und Krypto-Schlüssel. Durch die lange Liste an angegriffenen Dateitypen rechnen die Entwickler von Locky mit einer höheren Chance, dass die betroffenen Anwender bereit sind, für den Wiedererhalt ihrer Dateien zu zahlen.
 
 Die erste Welle des Angriffs wurde koordiniert zum gleichen Zeitpunkt gestartet, während sich Locky bis dahin noch im Netzwerk der befallenen Rechner verbreitet hat, um so möglichst viel Schaden auf einmal anzurichten. Die koordinierte Attacke zu einem Zeitpunkt hat es Administratoren verhindert etwa Netzwerksegmente bei seltsamen Aktivitäten von anderen abzuschotten, um so eine weitere Verbreitung zu verhindern. Locky hat des Weiteren noch Windows-Schattenkopien gelöscht, mit denen ein Wiederherstellen der verschlüsselten Dateien möglich gewesen wäre. \cite{locky:start}
 
@@ -22,11 +22,11 @@ Anfang Juni 2016 ist das Botnetz \glqq Necurs\grqq, das unter anderem für die V
 
 		
 \subsection{Petya}
-Eine andere Möglichkeit, den Nutzer von der Notwendigkeit der Bezahlung einer Lösegeldsumme zu überzeugen, nutzt die Malware \glqq Petya\grqq{} (März 2016): Anstatt einzelne Dateien zu verschlüsseln, die einen vermuteten, hohen ideellen Wert für den Anwender haben, installiert sie sich im Master Boot Record (MBR) des Rechners und verschlüsselt nach einem erzwungenen Neustart, unter Darstellung einer traditionellen CHKDSK-Ausgabe, die Master File Table (MFT). Ohne die MFT ist das Dateisystem nicht in der Lage, Dateien auf der Festplatte zu finden und auszugeben. \cite{petya:start} \\
+Eine andere Möglichkeit, den Nutzer von der Notwendigkeit der Bezahlung einer Lösegeldsumme zu überzeugen, nutzt die Malware \glqq Petya\grqq{} (März 2016): Anstatt einzelne Dateien zu verschlüsseln, die vermutlich einen hohen, ideellen Wert für den Anwender haben, installiert sie sich im Master Boot Record (MBR) des Rechners und verschlüsselt nach einem erzwungenen Neustart, unter Darstellung einer traditionellen CHKDSK-Ausgabe, die Master File Table (MFT). Ohne die MFT ist das Dateisystem nicht in der Lage, Dateien auf der Festplatte zu finden und auszugeben. \cite{petya:start} \\
 Somit werden zwar nicht die Daten selber, sondern der innere Zusammenhang zwischen den einzelnen Datenblöcken zerstört und unleserlich gemacht. Eine Nutzung oder gar ein Starten des Computers wird somit gezielt unmöglich gemacht.
 
-Eine Verbreitung erfolgte gezielt auf deutsche Nutzer, hauptsächlich auf Personalabteilungen von Firmen: In E-Mails, die angeblich für einen Job Bewerbungsunterlagen enthalten, ist ein Link enthalten, die auf eine Datei namens "`Bewerbungsmappe-gepackt.exe"' verweist, die auf dem Speicherdienst Dropbox zur Verbreitung gelagert wird. \cite{petya:infect} \\
-Im Gegensatz zu vergleichbaren Spam-Mails, die meist in krudem Deutsch verfasst sind, sind Grammatik und Rechtschreibung im Falle von Petya allerdings einwandfrei.
+Eine Verbreitung erfolgte gezielt auf deutsche Nutzer, hauptsächlich auf Personalabteilungen von Firmen: In E-Mails, die angeblich Bewerbungsunterlagen enthalten, befindet sich ein Link zu einer Datei namens "`Bewerbungsmappe-gepackt.exe"', die auf dem Speicherdienst Dropbox zur Verbreitung gelagert wird. \cite{petya:infect} \\
+Im Gegensatz zu vergleichbaren Spam-Mails, die meist in mangelhaftem Deutsch verfasst sind, sind Grammatik und Rechtschreibung im Falle von Petya allerdings einwandfrei.
 
 Bereits einen Monat nach Entdeckung der Ransomware hat ein unbekannter Sicherheitsforscher eine Software veröffentlicht, mit der die Entschlüsselung betroffener Systeme möglich ist. \cite{petya:end}
 
