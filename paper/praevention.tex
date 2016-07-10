@@ -27,16 +27,17 @@
 	Einen Schritt weiter geht \glqq Tarpitting\grqq, bei dem ähnlich wie bei der namensgebenden Teergrube die Geschwindigkeit verlangsamt wird. Der Spammer möchte soviel Mails wie möglich in kurzer Zeit versenden. Greylisting verjagt die Spammer zwar, aber lässt diese noch ungehindert ihr Werk tun. Die Tarpit reguliert den Mailempfang auf eine möglichst geringe Geschwindigkeit herunter, um so den Spammer möglichst lange im Sendezustand zu lassen. Solang diese Verbindung offen ist, wird er keine weitere öffnen. So wird beim Spammer eine Last erzeugt und dieser am massenhaften Versenden weiterer Mails gehindert.
 	
 \subsection{Serverseitige Mailfilter}
+
 	Es gibt allerdings noch weitere Möglichkeiten die Angriffsvektoren zu verringern. Eine ist es, alle ausführbaren Dateien (exe, src, chm, bat, com, msi, jar, cnd, hta, pif, scf) grundsätzlich zu löschen, oder zumindest in Quarantäne zu verschieben.\cite{bsi:ransome}\\
 	Das selbe gilt auch für verschlüsselte Archive und Office-Dateien mit Makros. Es ist durchaus möglich, dass dies nicht praktikabel ist. Dennoch sollten potenziell gefährliche Anhänge als solche prominent markiert werden.\cite{bsi:ransome}\\
 	Neben, wie schon in der vorherigen Sektion erklärt, Greylisting kann man noch das SPF\footnote{Sender-Policy-Framework} nutzen, welches bereits die Annahme von nicht legitimen E-Mails reduziert, was allerdings auf zu unerwünschten Nebeneffekten führen kann, wenn eigentlich legitime Mails abgelehnt werden. Zudem sollte der Mail-Server so konfiguriert sein, dass dieser keine Mails von internen Mail-Adressen, mit externer Absende-Adresse entgegen nimmt.\cite{bsi:ransome} Dies verhindert, dass vermeintliche Mails von  Arbeitskollegen gefälscht werden können, da diese bekanntlich als legitim aufgefasst werden.
 	
 	
 \subsection{Netzlaufwerke sichern}
+
 	Eine zentrale Datenhaltung ist heute unerlässlich, schon aus dem Grund, dass zentrale Backups erstellt werden können. Die kann allerdings zu einer Gefahr werden, da bereits Ransomeware existiert, die in der Lage ist Netzlaufwerke, auf welchen der Benutzer Schreibrechte hat, zu verschlüsseln. Die kann besonders großen Schaden verursachen, da nicht nur die Daten des Benutzers, sonder auch Daten von andren Benutzern, dessen Rechner eigentlich überhaupt nicht infiziert sind, auch verschlüsselt werden. Deshalb ist die Empfehlung des BSI die Daten von z.B. bereits beendeten Projekten auf schreibgeschützt zu setzen, da somit effektiv verhindert wird, dass die Ransomeware arbeiten kann, da sie zwar verschlüssen kann, allerdings die unverschlüsselten Daten nicht löschen kann. Somit ist der Angriff wirkungslos. \cite{bsi:ransome}\\
 	Hierbei sollte allerdings beachtet werden, dass dies nur für Dateien, die nicht mehr bearbeitet werden müssen anwendbar ist. Somit wären z.B. Dateien eins aktiv laufende Projektes auf diese weise nicht schüztbar, da dies im Alltag einfach nicht praktikabel wäre.
-\subsection{Netzwerke segmentieren}
-\subsection{Zugänge sichern}
+	
 \subsection{Aktueller Virenschutz}
 
 	Wie bereits beschrieben, benötigen die Antiviren-Hersteller circa 12 Stunden vom Zeitpunkt der Erkennung einer neuen Malware bis zum fertigen Update für ihre Softwarelösung. Um gegen eine Infizierung durch Ransomware gewappnet zu sein, ist es also anzuraten, möglichst täglich auf notwendige Updates hin zu überprüfen. Dies ist in nahezu allen Antiviren-Lösungen auch automatisch einstellbar.
