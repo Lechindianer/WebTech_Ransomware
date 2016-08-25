@@ -1,26 +1,5 @@
 # WebTech
 
-## Gliederung:
-
-- Fallbeispiele
-- Geschichte (Win/Apache/Wordpress/OS X)
-- Funktionsweise
-- Krypto Einführung
-- Virenscanner Funktionsweise / Heuristik / Umgehung von Heuristiken
-- Command and Control server
-- Bitcoin (Michael?)
-- Tor
-- Klassifizierung diverser Ransomware-Varianten
-- User Training
-- Backups
-- Zukünftige Gefahren in Anbetracht von Cloud-Diensten und IoT
-- Fazit
-- (Live-Demo?)
-
-## Paper-Beispiel:
-
-https://kowa.hs-augsburg.de/medium/text/publikationen/JP2-VIS05.pdf
-
 ## Links:
 
 ### Evolution von Ransomware:
